@@ -1,0 +1,461 @@
+"Mam English ....
+"
+"
+Iska notes kaha pr hai
+"
+"
+Dii binary sorting
+"
+"
+Pehli bar loop chlega to pehla element ro sort ho gya na
+"
+"
+Bubble sort -2:05
+"
+"
+""Why is this selection sort function not correct mam?
+static int[] selection(int[] arr) {
+
+		
+
+		for(int i=0;i<arr.length-1;i++) {
+
+			int sm = arr[i];
+
+			for(int j=i+1;j<arr.length;j++) {
+
+				if(sm>arr[j]) {
+
+					sm=arr[j];
+
+				}	
+
+			}
+
+			
+
+				int temp=0;
+
+				temp=sm;
+
+				sm=arr[i];
+
+				arr[i] = temp;
+
+			
+
+		}
+
+		
+
+		return arr;
+
+	}""
+"
+"
+""Tbh I don't understand the insertion sort code, I just love your videos but now I don't understand this one this video make me feel low and depressed so sorry for this type of comment and i want to plz plz it's humble request to u explain this sorting once again aur do this sort in more easy way.""
+"
+"
+Kya C++ aur Java mein Sorting same method se hoti hai?
+"
+"
+""no mam
+unable to get the logic n code for insertion
+can we skip that""
+"
+"
+java me exception ara hai code chl nhi rha
+"
+"
+Hllw mam
+"
+"
+I am in ICSE Board class10th student and this sorting are coming in board exams.Thank you didi for this video.
+"
+"
+""//GO FOR SIMPLE APPROACH//
+
+public class InsertionSort {
+
+    public static void printArray(int arr[]){
+
+        for(int i = 0;i<arr.length; i++){
+
+            System.out.print(arr[i]+"""" """");
+
+        }
+
+        System.out.println();
+
+    }
+
+
+
+
+
+    public static void main(String[] args) {
+
+        int arr[]  = {5,4,3,2,1};
+
+        for(int i =0;i<arr.length-1;i++){
+
+            for(int j =i+1;j>0;j--){
+
+                if(arr[j]<arr[j-1]){
+
+                    int temp = arr[j];
+
+                    arr[j] = arr[j-1];
+
+                    arr[j-1] = temp;
+
+                }
+
+            }
+
+        }
+
+        printArray(arr);
+
+    }
+
+}""
+"
+"
+notes ka 4 page blank hei
+"
+"
+focus more on coding not more on explanation
+"
+"
+I can't find previous homework answers!
+"
+"
+didi you are literally op
+"
+"
+Is this complete series with all datastructure and algorithm
+"
+"
+""Bubble Sort - 2:05
+
+Selection   Sort - 16:04
+
+Insertion Sort - 25:26""
+"
+"
+""public static void printArray(int[] x){
+
+        for(int i = 0; i<x.length; i++){
+
+            System.out.print(x[i] + """" """");
+
+        }
+
+    }
+
+    public static void main(String[] args){
+
+
+
+        int[] score = {5,31,44,6,88,49,2,1};
+
+
+
+        for(int i=0; i< score.length; i++){
+
+            int smallest = score[i];
+
+            for(int j=i; j< score.length; j++){
+
+                if(score[j]< smallest){
+
+                    smallest = score[j];
+
+                    score[j] = score[i]; 
+
+                    score[i] = smallest;
+
+                }
+
+            }
+
+        }
+
+        printArray(score);
+
+    }""
+"
+"
+Lovved the explanation.
+"
+"
+Grt shradhdha damm sorting lectures buddy
+"
+"
+thankyou maam
+"
+"
+We can print the array using System.out.println(Arrays.toString(arr));
+"
+"
+add english subtitles later
+"
+"
+i cant understand the use of 2nd for loop in bubble sort ???
+"
+"
+can you provide videos in english
+"
+"
+""Bubble Sort - 2:05
+
+Selection   Sort - 16:04
+
+Insertion Sort - 25:26""
+"
+"
+""import java.util.*;
+class bubblesorting
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int size= sc.nextInt();
+        int arr[]=new int[size];
+        int temp=0;
+        for(int a=0;a<size;a++)
+        {
+          arr[a]=sc.nextInt();
+        }
+        for(int i=0;i<size-1;i++)
+        {
+            for(int j=0;j<size-i-1;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        for(int i=0;i< size; i++)
+        {
+            System.out.print(arr[i]+"""" """");
+        }
+    }
+}""
+"
+"
+🚀🚀
+"
+"
+madam ap chup ho jayee
+"
+"
+Instead of O(n^2) in selection sort can we say it's time complexity is theta of n^2?
+"
+"
+""Suniye, exceptions handling  ka topic bataya kya didi ne?""
+"
+"
+why you are not speaking in English
+"
+"
+Manlo bohut asse se samji
+"
+"
+Y'all know what she's saying?
+"
+"
+""LEGENDS
+----------------
+import java.util.*;
+
+public class LegendsSorting {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int n = input.nextInt();
+
+        int i;
+
+        List<Integer> numbers = new ArrayList<>();
+
+        for(i = 0;i < n;i++){
+
+            numbers.add(input.nextInt());
+
+        }
+
+        Collections.sort(numbers);
+
+        System.out.println(numbers);
+
+    }
+
+}
+OUTPUT
+--------------
+10
+
+99 88 66 55 44 33 11 77 22 33
+
+[11, 22, 33, 33, 44, 55, 66, 77, 88, 99]""
+"
+"
+Why have we created a function if we can print it without creating it
+"
+"
+Mja aagya
+"
+"
+22:39 why is it not j<arr.length-1??
+"
+"
+Ma'am for real world coding which are the sorting methods to be practiced thorughly?
+"
+"
+shouldn't bubble sort have a time complexity of Big O( n! )  instead of Big O(n2) ???
+"
+"
+It's not swop it's swap
+"
+"
+""Bubble Sort - 2:05
+Selection   Sort - 16:04
+Insertion Sort - 25:26""
+"
+"
+Didi we need android development playlist
+"
+"
+2:45 clap clap for the apni team heatly
+"
+"
+why we have not used j=i+1 instead j=0 in bubble sort
+"
+"
+bhai searching kishme samjhaya he kishi ko pata he
+"
+"
+""Continue this course maam, Make videos on Multi threading, JDBC, REGEX""
+"
+"
+14:16 I thought the time complexity would be O(n!) cause you're saying n*(n-1)*(n-2)..
+"
+"
+road to 1 million
+"
+"
+Os aur DBMS ka bhi lao didi playlist.
+"
+"
+""//I think this should work too in insertion sort( did it myself)
+int[] arr = { 9, 1, 8, 2, 7, 3, 6, 4, 5, 0 };
+
+        for (int i = 1; i <= arr.length - 1; i++) {
+
+        int current = i;
+
+        while (arr[current] > arr[current - 1]) {
+
+        int temp = arr[current];
+
+        arr[current] = arr[current - 1];
+
+        arr[current - 1] = temp;
+
+        current--;
+
+        }
+
+        }
+
+        printarr(arr); //it just a function to print final array
+//printarr function(paste outside main function)
+  public static void printarr(int arr[]) {
+
+        for (int i = 0; i < arr.length; i++) {
+
+            System.out.print(arr[i] + """" """");
+
+        }""
+"
+"
+technique toh samjha per code ka implement kuch nahi samjha except bubble sort
+"
+"
+Hi
+"
+"
+Ye dislike valon ko pata nahi kya chahiye.... We must atleast appreciate the efforts....
+"
+"
+Ye to har ek school student ko aata hai.. I am also a student
+"
+"
+brilllllliant
+"
+"
+Madam kya sabhi android k liye ek hi technology kam aati h ya koi aur bhi
+"
+"
+Searching mam ...
+"
+"
+need more videos on the java playlist
+"
+"
+Background sound hatado bx 🙄
+"
+"
+MS wali didi aa gayi
+"
+"
+What is the duration of this java course?
+"
+"
+THIS WAS I WAS JUST SEARCHING FOR
+"
+"
+Thanku for this but we need linked list
+"
+"
+Didiiiiiii......!!
+"
+"
+Need some more ds
+"
+"
+Data structure bhi dedo 🙏🙏
+"
+"
+👍🙌
+"
+"
+""And yaa what a name
+APNA COLLEGE 
+IT STANDS FOR YOUR WORK""
+"
+"
+Didi ye channel aap k h ya aman bhaiya k?
+"
+"
+10 comments bhiya
+"
+"
+Didi aap ki insta id bio me nhi hoti kyu?
+"
+"
+🌹🌹
+"
+"
+Second one
+"
+"
+First view
+"

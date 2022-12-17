@@ -1,0 +1,191 @@
+"
+Tomorrow is my pre board exam of computer applications I am not prepared
+"
+"
+""24:03 Sorry, but in this Selection Sort i guys the Outer Loop is running n-1 times and you said n times so Guys please you also do comment me that as that right or wrong because I am too confused about this...Thank You.....!!!""
+"
+"
+""public class insertionSort{
+
+    public static void printArray(int[] a){
+
+        for(int i:a){
+
+            System.out.print(i+"""" """");
+
+        }
+
+    }
+
+    public static void main(String[] args){
+
+        int[] a={7,8,3,1,2,8,5,6};
+
+        int n=a.length;
+
+        for(int i=0;i<n-1;i++){
+
+            for(int j=i+1;j>0;j--){
+
+                if(a[j]<a[j-1]){
+
+                    int temp=a[j];
+
+                    a[j]=a[j-1];
+
+                    a[j-1]=temp;
+
+                }
+
+            }
+
+        }
+
+        printArray(a);
+
+
+
+    }
+
+}
+
+
+
+
+I WROTE THIS CODE FOR INSERTION SORT BUT NOW I AM CONFUSED IF THIS IS INSERTION SORT ITSELF OR ANY OTHER TYPE, CUZ IT GIVES PERFECT RESULT.....
+
+😂😂🥲🥲😭😭""
+"
+"
+insertion sort is confusing
+"
+"
+so so confusing !
+"
+"
+""hello maim you had  one mistake again  if(nums[smallest] > nums[j]){
+
+            
+
+            var temp = nums[smallest]
+
+            nums[smallest] = nums[j]
+
+            nums[j] = temp  ; plz repalce i to j in selection sort""
+"
+"
+""mam mere me run nhi ho rha hai bubble sort 
+printArray(arr) error bta rha hai kaise solve kru""
+"
+"
+""but arr.length is giving error 
+why how to fix it""
+"
+"
+ma'am not able to understand time complexity 😭
+"
+"
+""Her expressions are irritating
+Anyone noticed this?""
+"
+"
+""NOTE :: SELECTION SORT || DO NOT SWAP VALUES USING XOR OPERATOR HERE (when both indexes are same, value at this index will become zero and it won't sort properly)""
+"
+"
+""what my problem .........
+
+
+public class nayem {
+
+    public static void printArr(int arr[]){
+
+        for(int i=0; i<arr.length; i++){
+
+            System.out.print(arr[i]+"""" """");
+
+        }
+
+        System.out.println();
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr={7,8,3,1,2};
+
+
+
+        //bubble sort
+
+        for(int i=0; i < args.length-1; i++){
+
+            for(int j=0; j < arr.length-i-1; j++){
+
+                if(arr[j] > arr[j+1]){
+
+                    //swap
+
+                    int temp=arr[j];
+
+                    arr[j]=arr[j+1];
+
+                    arr[j+1]=temp;
+
+
+
+                }
+
+            }
+
+        }
+
+        printArr(arr);
+
+    }
+
+}""
+"
+"
+still not sure if she speaks english or hindi
+"
+"
+Inserting sort:.  Completely bounce 😂😭🔥
+"
+"
+""int arr [] = {4,2,8,7};
+
+
+
+        for (int i=0; i<arr.length-1; i++) {
+
+                if (arr[i] > arr[i+1]) {
+
+                    int x = arr[i];
+
+                    arr[i] = arr[i+1];
+
+                    arr[i+1] = x;
+
+                }
+
+        }
+I made only one loop and it gives the right results....anything wrong in this?""
+"
+"
+Is C# is not worthy now?
+"
+"
+Plz try to post videos on time! Last video 1 month ago☹
+"
+"
+The Intro Beat🔥
+"
+"
+Didi DS pr video upload krdo parso paper Hai lipat jayenge 😢
+"
+"
+Mera  jee clear nhi hua di me kya karun  ab 😢😢😢
+"
+"
+No 2
+"

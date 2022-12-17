@@ -1,0 +1,525 @@
+"
+Thank you shradha did really helped me to Crack interview.
+"
+"
+""I am a class 11th student and I was a little confused these 3 sorting and I have my half yearly examination tomorrow.
+Now I have understood so thank you ma'am 🙏🙏
+Well I also invented my own way to sort an array 🤏😎✌️""
+"
+"
+My monthly test is tomorrow a big thank you to you ma’am i was confused about bubble sort 🙂
+"
+"
+Please try kijiye na binary sorting
+"
+"
+Very great explanation thank you so much for such as videos.
+"
+"
+Is this topic important ?
+"
+"
+Thank You So Much Mam and Aman Bhaiya
+"
+"
+Mam background music ki waja se or b achi smj aa rahi ha
+"
+"
+Thank you so much madam for making my concepts clear
+"
+"
+Mujhe to 10 minute me smjh agya insertion sort 😃😃 notebook pe likh k try kro smjhne ka this is easy I am 16 year old if I can do you can toooooooo 🥰🔥😊 shraddha didi op
+"
+"
+""Thank you so much didi 
+Love from Sikkim 🧡""
+"
+"
+Best
+"
+"
+this video has awesome sound quality.
+"
+"
+great lecture😍
+"
+"
+26:47 aap usse patak hi do koi baat nhi☺️
+"
+"
+""the way you type is little bit fast and coding is not shown properly
+hope so improve next time""
+"
+"
+""thanks for this lecture.
+I understood everything.""
+"
+"
+really you are great.
+"
+"
+what isthe application used here to write the code... iam in cls 11 and i use only blueJ...so if anyone can tell please....
+"
+"
+""Thank You, Ma'am, this proved to be very helpful. You explained it so well that now my concepts are crystal clear and I am fully geared up for my board exam 2023.""
+"
+"
+""This code is easy to understand as compared to the code explained in the video for Insertion sort.                                                                                                                                         
+
+// Insertion sort
+
+        for(int i=1; i<arr.length;i++)
+
+        {
+
+            int j=i;
+
+            while(j>0 && arr[j-1]>arr[j])
+
+            {
+
+                int temp = arr[j-1];
+
+                arr[j-1] = arr[j];
+
+                arr[j] = temp;
+
+                j--;
+
+            }
+
+        }""
+"
+"
+ngl but I found the insertion sorting method most easy 😂
+"
+"
+""one of best lecture
+..............""
+"
+"
+""These techniques take time to learn, Is this little bit hard or Is it only me who's feeling this... 
+Answer please... 
+Humble request....🙏🙏""
+"
+"
+mam please background me music mat dalo karo isse diturbrance hota hai
+"
+"
+Didi awesome videos
+"
+"
+Nice
+"
+"
+""I was trying to make the bubble sort which I got working. For past half an hour I am trying to put the bubble sort in a function but my code is showing error I would be really glad if you could help me
+
+package com.DSA;
+
+
+
+public class sorting {
+
+
+
+    public static void printArray(int arr[]){
+
+
+
+        for(int i=0; i<arr.length; i++){
+
+            System.out.print(arr[i] + """" """");
+
+        }
+
+    }
+
+
+
+
+
+    public static void bubbleSort(int arr[]){
+
+        for(int i=0; i<arr.length-1; i++){         //for choosing no. 0->7  ,  1->8 , etc.  //need only to arrange n-1 element in array
+
+            for(int j=0; j<arr.length-1-i; j++){   //for comparing the choosen element with next element leaving behind i no of elements as they are already sorted   
+
+                if(arr[i] > arr[i+1]){
+
+                    int temp = arr[i];
+
+                    arr[i] = arr[i+1];
+
+                    arr[i+1] = temp;
+
+                }
+
+            }
+
+        }
+
+        printArray(arr);
+
+    }
+
+
+
+    
+
+    public static void main(String[]args){
+
+
+
+        int arr[] = {7, 8, 3 ,1 ,2};       //arr.length==5
+
+
+
+        //BUBBLE SORT
+
+        bubbleSort(arr[]);
+
+    }
+
+}""
+"
+"
+""great video loved it , explanation was good very easy""
+"
+"
+greatttt explanation❣️
+"
+"
+INSERTUON SORT-While loop k bad mujhe smjh nhi aya please help me..maine es video ko 5 times dekha..
+"
+"
+Solutions of previous video are not uploaded in this video lecture's pdf !
+"
+"
+Best video... For class x ICSE
+"
+"
+thank you mam your video helps many student like me
+"
+"
+Please provide solution of homework questions of previous lecture ( bit manipulation ).
+"
+"
+Thanks di✨
+"
+"
+""Though I am a beginner in coding, still this video was really helpful for me.  THanks!""
+"
+"
+It's pleasure to learn from you mam 🙏🙏🙏
+"
+"
+Good job on editing
+"
+"
+Thanks
+"
+"
+I think it is well explained here but if you will show the matrix after each and every iteration then the visualization must be clear
+"
+"
+Nice didi🔥🔥🥰🥰🥰
+"
+"
+anyonehere can help me bubble sorting
+"
+"
+Best teacher ma'am
+"
+"
+Didi why we are running outer loop n-1 time on running with n it is giving same output in Bubble Sort
+"
+"
+Mam i dont understand insertion and selection please upload another simpler way of those two
+"
+"
+""You are looking happy ma'am ,btw thanks for your lecture""
+"
+"
+Great explanation..very nicely explained using the diagrams..it gets very easy when you understand at high level and then write down the same through code..Thankyou so much for your effort.
+"
+"
+We want Seperate lecture on MySQL basic to advance for database.
+"
+"
+""public class nayem {
+
+    public static void printArr(int arr[]){
+
+        for(int i=0; i<arr.length; i++){
+
+            System.out.print(arr[i]+"""" """");
+
+        }
+
+        System.out.println();
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr={7,8,3,1,2};
+
+
+
+        //bubble sort
+
+        for(int i=0; i < args.length-1; i++){
+
+            for(int j=0; j < arr.length-i-1; j++){
+
+                if(arr[j] > arr[j+1]){
+
+                    //swap
+
+                    int temp=arr[j];
+
+                    arr[j]=arr[j+1];
+
+                    arr[j+1]=temp;
+
+
+
+                }
+
+            }
+
+        }
+
+        printArr(arr);
+
+    }
+
+}
+
+
+
+🙂""
+"
+"
+Jab aap bich bich me smile karte hain omg aap bahut achhi lgti hain 😎. Thanks fo......
+"
+"
+Point Clear hua didi mera sorting 😎
+"
+"
+Ma'am please make video on Hashmap and Hashing in java.
+"
+"
+dude u r very confident in speaking.
+"
+"
+java also be care
+"
+"
+Please upload video for Tim sort also
+"
+"
+""Very well explained, thanks""
+"
+"
+Thanks mam🤘
+"
+"
+thank you di'😊❤️
+"
+"
+I like your teaching style  Didi.
+"
+"
+Yrr plz direct topic padhaya karo plz ...yrr wotna backchodi sunna ka man nhi karta plz try to understand
+"
+"
+Please make videos to crack appitude online exams and interviews...
+"
+"
+""Is there anthing for Java like """"Thonny"""" for Python? Which Shows step by step code Execution.?""
+"
+"
+Good video with explanation
+"
+"
+Helpful for school students also thank you mam
+"
+"
+Title mein placement sort vi likh dete 🤣
+"
+"
+Very simple explanation but best explanation.
+"
+"
+""Hey Man ..!! Her Attitude ,her Confidence, the way she speaks and represent herself exactly  matches with our Aman Bhaiya .
+and yeah I liked it  !!""
+"
+"
+Pls upload videos in English
+"
+"
+""o didi ,,tu animation karu shatkt ya madhe ..int age assign kar ani animation madhe ty age lok dhava ani index place mahun tyna basyal chair de mag ...tych sorting kar ... bagh easy hoil ...
+jay maharashtra ,jay ma bharti""
+"
+"
+Didi apki teaching super...
+"
+"
+""why {7,8,3,1,2} is giving {2,1,3,7,8}.You have run the code using {7,8,3,1,2} but in notes you have provided  in that the unsorted array is {7,8,1,3,2} which gives correct output. Help if any one can find the error.""
+"
+"
+Shradha didi .. please send the solutions document of last lecture
+"
+"
+ISC student here...thank you didi you are helping 12th students too
+"
+"
+""your explanation is excellent, but try to make short length video plz. most of the time i skip your video because of length duration?""
+"
+"
+Nice explanation of all sorting algorithms di
+"
+"
+Awesome explanation I am already software Engineer but this video helps me lot...
+"
+"
+Could you please tell us the name of your theme. This particular theme on vscode looks really good
+"
+"
+""Please make One-Shot videos on : 
+DBMS
+CN
+OS""
+"
+"
+""Thanks didi  for your guidence
+Aur bhi jaldi jaldi video dalo please""
+"
+"
+Please teach us how to create java to database in vs code
+"
+"
+""Hello,
+Do you help me in selenium automation testing with java. If yes then please please guide me and provide me a series on selenium automation. Realy I will be greatful for your help.""
+"
+"
+Ky hamein coding notepad mein leek kar java mein run karre .yaa method plz explain kize yaaa
+"
+"
+we need c++ with memory optimization since we come from java background
+"
+"
+""Can uhh please complete this playlist by adding all the rest of the videos...cz its quite difficult to wait no. Of days for a new video to be uploaded....hope you'll look after it.
+And these videos are awesome""
+"
+"
+""Thank you for these videos
+We all follow your courses
+Love from Far Western University
+Nepal""
+"
+"
+Didi please make some videos on ML
+"
+"
+Because of u Mam I have got job in Wipro...Thanku for ur videos ...Please  add videos...love u
+"
+"
+Wow Such a great way of explanation. Very thanks for uploading such helpful learning videos. Appreciate it.
+"
+"
+Hey! Could you please upload a video on Pega software and on why it's gaining popularity in recent times.
+"
+"
+Mam.. please provide further videos of this playlist ....as quickly as possible
+"
+"
+Awesome dii👏👏
+"
+"
+""IN islam death means transition or inteqal from one time and space frame to another
+but the secret is still RED
+love you""
+"
+"
+Didi can we get courses on python pls.
+"
+"
+""Mam muje full course C program ka chaiye
+Ek baar please🙏 mam Basic se""
+"
+"
+Please monitize this channel
+"
+"
+Please mam advance java ka bhi course le kar aaye
+"
+"
+Plz JDBC bhi jaldi se btaye mam
+"
+"
+Thank you thank you so much
+"
+"
+Explanation was really amazing 👍❤️
+"
+"
+""i love it when the notification shows up, 
+""""Someone liked your comment"""" and """"you have a new subscriber.,.,""
+"
+"
+Im in class 10 ICSE And i have taken CS In My Secondery Subject and im watching your videos from past 2 years and i have learned java+dsa and following your tips i can literally give an job interview and im sure i will be qualified big fan
+"
+"
+We need free lancing course
+"
+"
+AWESOME 👍 I DIDN'T EVEN KNOW J OF JAVA BUT STILL I GET ALL 3 TECHNIQUE OF THEM
+"
+"
+I was in my Infosys Java stream and believe me you taught sorting algorithms in the most simplest way than Educators in Infosys 🙏 Thank you I spent valuable 30 minutes today 😁🤩
+"
+"
+Its very Helping to understand Every concepts in Java in Your All Videos.
+"
+"
+Thanks mam for valuable information ☺️
+"
+"
+Apna college you are best special Microsoft didi😂❤️
+"
+"
+""Thanks for this video 
+This video will help me in future because currently I am learning c programming.
+Di please if it possible so please make the videos upon C programming also.""
+"
+"
+Didi tussi great ho🙏🙏🙏
+"
+"
+""hi di and  Aman bhaiya , Please make  a particular course of Kotlin .
+I  hope , You will must make it.""
+"
+"
+""Actually you would be my actual teacher rather than my college teacher 
+THANKYOU FOR HELPING ME""
+"
+"
+Aapna college is one of the best chanell for study programing language ❤️❤️❤️
+"
+"
+Please remove Background sound. 🤯🤯
+"
+"
+DBMS please
+"
+"
+Pls tell about pega what is pega and how it is useful for cse freshers pls 🙏
+"
+"
+Amazing
+"
+"
+Want like
+"

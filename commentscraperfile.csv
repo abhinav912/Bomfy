@@ -1,0 +1,3253 @@
+"void bubble_sort(int arr[],int n){
+    for (int i = 0; i < n-1; i++)
+    {
+        for (int j = 0; j < n-1-i; j++)
+        {
+            if (arr[j+1]<arr[j])
+            {
+                int temp=arr[j+1];
+                arr[j+1]=arr[j];
+                arr[j]=temp;
+            }
+            
+        }
+        
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<<"" "";
+    }
+    
+}"
+!,@,#,$,%,U,^,&,*,(,)
+same note as lecture 8.3.1
+!,@,#,$,%,U,^,&,*,(,)
+"There is a problem when i enter n = 6 
+And arr elements as 5,6,7,3,2,1
+
+The sorted arry gives 2,1,3,5,6,7"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you
+!,@,#,$,%,U,^,&,*,(,)
+Please explain in English you mixed in Hindi cannot understand
+!,@,#,$,%,U,^,&,*,(,)
+"You can also do this simply with the help of a for loop like this
+
+for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i; j++)
+        {
+            if (arr[j + 1] < arr[j])
+            {
+                temp = arr[j + 1];
+                arr[j + 1] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }"
+!,@,#,$,%,U,^,&,*,(,)
+"In while loop, its while(counter<n). While narrator was speaking shw said n-1. Everyone please use n and not n-1"
+!,@,#,$,%,U,^,&,*,(,)
+I recommend this video. I am very happy and grateful.
+!,@,#,$,%,U,^,&,*,(,)
+"In case, if you are stuck 
+Use this:
+
+
+
+int counter=0;
+    while(counter<n-1){
+        for(int i=0;i<n-counter-1;i++){
+           if(arr[i]>arr[i+1]){
+                int temp=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=temp;
+            }
+           
+        }
+        counter++;
+    }"
+!,@,#,$,%,U,^,&,*,(,)
+This was really helpful. Thanks
+!,@,#,$,%,U,^,&,*,(,)
+What is mam's name ?
+!,@,#,$,%,U,^,&,*,(,)
+I love the 15 chocolate example
+!,@,#,$,%,U,^,&,*,(,)
+"💛❤ಧನ್ಯವಾದಗಳು❤💛
+🙏💕 Thank You💕🙏
+Revanasidda N Karigoudar
+❤💛ರೇವಣಸಿದ್ದ ಎನ್ ಕರಿಗೌಡರ್💛❤"
+!,@,#,$,%,U,^,&,*,(,)
+BEST Bubble Sort VDO ever...❤
+!,@,#,$,%,U,^,&,*,(,)
+"little diff code for bubble sort -
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int arr[n];
+    
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i=1;i<n;i++){
+        for(int j=0;j<n-i;j++){
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j+1];
+                arr[j+1]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<"" "";
+    }
+    
+
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+I wrote the same code but it gave an error - expression must have const value in arr[n]. So what to do???
+!,@,#,$,%,U,^,&,*,(,)
+Why madam . U counting count plus plus
+!,@,#,$,%,U,^,&,*,(,)
+"int n,j,k,i;
+    cin >>n;
+    int arr[n];
+    for(i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    for (k=n-1;k>0;k--){
+        for (i=0;i<k;i++){
+            j=i;
+            if(arr[j]>arr[j+1]) {
+                int temp;
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+        // to check iteration correct or not
+        for(i=0;i<n;i++){
+        cout<<arr[i]<<"" "";}
+        cout<<endl;
+    }
+    for(i=0;i<n;i++){
+     cout<<arr[i]<<"" "";}
+        cout<<endl; bubble sort works good by this too"
+!,@,#,$,%,U,^,&,*,(,)
+Ye dsa ka course hain ya rajdhani express 🤔 kitna jaldi ja raha ha...
+!,@,#,$,%,U,^,&,*,(,)
+Thanks for this amazing tutorial
+!,@,#,$,%,U,^,&,*,(,)
+Awesome explanation 👌👍
+!,@,#,$,%,U,^,&,*,(,)
+"Please Can anyone give the explaination of last Chocolate Distribution Problem.
+I'm not able to code 🥲😑"
+!,@,#,$,%,U,^,&,*,(,)
+Aap algo no doubt bht badia smjhate ho but code kuch bhi kyu likh dete ho same was in selection sort aggr smjha rhe ho to last me poora shi code bhi likhkrr dikha hi do
+!,@,#,$,%,U,^,&,*,(,)
+Code bekaar hai.. explanation bhi.....mza nhi aaya....
+!,@,#,$,%,U,^,&,*,(,)
+"Nice explained and easy to understand ☺️
+Thank you so much mam👍"
+!,@,#,$,%,U,^,&,*,(,)
+I have a doubt that what is the need of bubble sort as both selection and bubble have the same time complexity and they perform the same operation any answer to this ??
+!,@,#,$,%,U,^,&,*,(,)
+"Bubble sort complexity - 
+Time complexity - 
+1. Best case - O(n) ( if array is already sorted )
+2. Average case - O(n^2)
+3. Worst case - O(n^2)
+
+Space complexity - O(the number of extra variables used) if 1 extra variable  then O(1) , if 2 extra variable then O(2)."
+!,@,#,$,%,U,^,&,*,(,)
+"// Bubble sort
+void bubble_sort(int arr[], int n){
+    for(int j = n; j > 0; j--){
+        for(int i = 1; i < j; i++){
+            if(arr[i-1]>arr[i]){
+                int temp = arr[i-1];
+                arr[i-1] = arr[i];
+                arr[i] = temp;
+            }
+        }
+    }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+"di apne bola ki hume (n-1)iteration ke baad sorted array milega to is hissab se while loop (count<=n-1) tk chlna cahiye na bcz count 1 se initialize hua hai ....baaki notes mai to shi hai
+
+    int count = 1;
+    while (count <= n - 1)
+    {
+        for (int i = 0; i < n - count; i++)
+        {
+            if (array[i] > array[i + 1])
+            {
+                int temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
+        }
+        count++;
+    }
+
+//Please correct me if i am wrong"
+!,@,#,$,%,U,^,&,*,(,)
+"#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<""enter range: "";
+    cin>>n;
+    
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cout<<""enter arr[""<<i<<""] "";
+        cin>>arr[i];
+    }
+    
+    for(int counter=1;counter<n;counter++){
+        for(int i=0;i<n-counter;i++){
+            if(arr[i+1]<arr[i]){
+                int temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+            }
+        }
+    }
+    
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<"" "";
+    }cout<<endl;
+
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+"The great teaching method, Thanks for serving us these videos, and I have a suggestion please make basic projects and shout them as lessons.
+thank you so much for this kind of teaching,"
+!,@,#,$,%,U,^,&,*,(,)
+.
+!,@,#,$,%,U,^,&,*,(,)
+Why We took counter =1 ? Why not started from 0 please tell
+!,@,#,$,%,U,^,&,*,(,)
+"instead of line 17 to 21,
+why didn't you use swap function, ma'am? is that slower compared to if comparison?"
+!,@,#,$,%,U,^,&,*,(,)
+"Write code with AI
+Video link : https://youtu.be/jZdyZHweYJ8"
+!,@,#,$,%,U,^,&,*,(,)
+Time complexity???
+!,@,#,$,%,U,^,&,*,(,)
+Dear sister your awesome I like your teaching 🥰
+!,@,#,$,%,U,^,&,*,(,)
+"Can someone help me understand why she used ( i<n-counter ) because if we want to check until ( n - i ) then the condition will be
+( i <= n - counter ) shouldn't we use this?"
+!,@,#,$,%,U,^,&,*,(,)
+ek to awaaz itni pyaari hai upar se padhati bhi world class hain
+!,@,#,$,%,U,^,&,*,(,)
+Thanks a lot I got it 🥳
+!,@,#,$,%,U,^,&,*,(,)
+nice explaination mam.....
+!,@,#,$,%,U,^,&,*,(,)
+thanks for giving us for your coding videos who help us to boost coding power and grow up us level of programming
+!,@,#,$,%,U,^,&,*,(,)
+thank you for this awesome course
+!,@,#,$,%,U,^,&,*,(,)
+"We can also use this method, it will be in the same structure as Selection Sort
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{
+
+
+    int n;
+    cin>>n;
+
+    int arr[n];
+
+    for (int i = 0; i <n; i++)
+    {
+        cin>>arr[i];
+    }
+
+  for(int i=0;i<n;i++)
+  {
+    for(int j=0;j<n-1;j++)
+    {
+        if(arr[j]>arr[j+1])
+        {
+            int temp = arr[j+1];
+            arr[j+1]=arr[j];
+            arr[j]=temp;
+        }
+    }
+  }
+
+   for (int i = 0; i <n; i++)
+    {
+        cout<<arr[i]<<"" ""   ;
+    }
+
+
+}"
+!,@,#,$,%,U,^,&,*,(,)
+"Mam I think "" counter = 0 "" ho ga. please guid me as early as posible. Thank's a lot...."
+!,@,#,$,%,U,^,&,*,(,)
+Thank you for explaning bubble sort in concise way easily🙂
+!,@,#,$,%,U,^,&,*,(,)
+"Plz,koy akbar iska time complexity describe kar do."
+!,@,#,$,%,U,^,&,*,(,)
+"before apna college ,i was dumb in coding,concept of coding went to upper side from my head,One day i meet  to my brother,He suggested me to see coding on apna college,,and then after this,, now I can say that i can do something in coding.Love U all apna college team,,One day I shall meet to apna college team sure,specially Shradhha di."
+!,@,#,$,%,U,^,&,*,(,)
+"BUBBLE SORT IN SIMPLPE :-
+for(int j=0;j<=n;j++){
+        for(int i=0;i<n;i++){
+            if(arr[i]>arr[i+1]){
+                swap(arr[i],arr[i+1]);
+            }
+        }
+        }"
+!,@,#,$,%,U,^,&,*,(,)
+0:12 its repeatedly.... NOT reapetedly     you will not believe but i lose 10 rupees Bit from Brother ... lol
+!,@,#,$,%,U,^,&,*,(,)
+"In this video the counter should be intialise to 0 not 1 
+And in the for loop I<n-counter-1"
+!,@,#,$,%,U,^,&,*,(,)
+"DIDI at 4:42 you have entered n-1 but at screen it is not visible 
+It is only showing n"
+!,@,#,$,%,U,^,&,*,(,)
+"Oh my God 
+I was so worried about Data structure 
+Then i saw your Video
+It is very Useful 
+Keep up the good work"
+!,@,#,$,%,U,^,&,*,(,)
+code has infinite loop for input of array elements
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you 
+Please consume more time on coding"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much AMAN BHAIYA and the whole team of APNA COLLEGE ❤️❤️✨✨
+!,@,#,$,%,U,^,&,*,(,)
+"Mam plz make video for link list, stack and queue"
+!,@,#,$,%,U,^,&,*,(,)
+Thanks so much
+!,@,#,$,%,U,^,&,*,(,)
+It's very fast and effective method to solve bubble sort as how to works and implement in program
+!,@,#,$,%,U,^,&,*,(,)
+Ye 4:58 ko counter<n he kya counter<n-1
+!,@,#,$,%,U,^,&,*,(,)
+"9.3.1 lec is missing,
+Pls help me someone to find this lec notes..?
+?"
+!,@,#,$,%,U,^,&,*,(,)
+"really felt gratitude didi, thank you for providing such a video for free. It contains the whole 2hrs of class lecture content incorporated in just few minutes, AMAZING."
+!,@,#,$,%,U,^,&,*,(,)
+Thanks didi and bhaiya
+!,@,#,$,%,U,^,&,*,(,)
+Yaar while( counter <n-1) hoga na
+!,@,#,$,%,U,^,&,*,(,)
+just explain a topic with  one or two question otherwise that is best course in c++
+!,@,#,$,%,U,^,&,*,(,)
+Mam bada acha pada ti hai
+!,@,#,$,%,U,^,&,*,(,)
+code not working correctly
+!,@,#,$,%,U,^,&,*,(,)
+I have to type numbers  and then  press enter and then type 2 3 digits to get result on cmd and still one number is missed!? what is the solution !
+!,@,#,$,%,U,^,&,*,(,)
+"if the title is in English then why don't u talk in English, so annoying"
+!,@,#,$,%,U,^,&,*,(,)
+Didi from this video i just watched the concept behind bubble sort and the code i printed on my own. The output was correct and I am very happy as I am a beginner and have printed the code very easily. Thx for your lectures.
+!,@,#,$,%,U,^,&,*,(,)
+OOOrr OOORR  why not AURRRRRR
+!,@,#,$,%,U,^,&,*,(,)
+Speed of typing
+!,@,#,$,%,U,^,&,*,(,)
+"Wow!.....short, crisp and to-the-point.."
+!,@,#,$,%,U,^,&,*,(,)
+Thnx buddy ❤️
+!,@,#,$,%,U,^,&,*,(,)
+Code is not running
+!,@,#,$,%,U,^,&,*,(,)
+Same notes as Lecture 8.3.1*
+!,@,#,$,%,U,^,&,*,(,)
+Why don't you just use the most popular algorithm? Is it necessary to make every algorithm more complex by adding your touch even if the complexity is just the same. Pls stop making these videos more diff as we are just the beginners.
+!,@,#,$,%,U,^,&,*,(,)
+should we learn all the sorting techniques or any 1 is enough
+!,@,#,$,%,U,^,&,*,(,)
+"I think the whole algo is correct but instead of creating temp variable for swapping we can like use function swap( arr [ i+1], arr[i] )
+this will reduce time and logic is simple too !
+what say !"
+!,@,#,$,%,U,^,&,*,(,)
+For Notes It's 8.3.1
+!,@,#,$,%,U,^,&,*,(,)
+"Everyone do like man, They are providing Platinum for free."
+!,@,#,$,%,U,^,&,*,(,)
+Thank you clear all doubts
+!,@,#,$,%,U,^,&,*,(,)
+"Hi di
+I didn't understand one thing in the video. At 3:40 you said that for n elements in the array, we have to do (n-1) iterations. 
+But does the number of iterations not vary from example to example ?
+Like for your example you get the sorted array in 5 iterations but if you take something like {45,2,31,27,8,36} It takes only 3 iterations though there are 6 elements. Pls clarify anyone"
+!,@,#,$,%,U,^,&,*,(,)
+"Hello team, Please try to mention complexity analysis for each necessary videos and if possible please inculde the puzzles similar to later videos
+Overall learning experience is too good and simple and best.
+Thank you."
+!,@,#,$,%,U,^,&,*,(,)
+"This Video Tutorial is best for beginners. Who started learning C++. This tutorial also best for BCA/MCA B.scIT , M.sc IT and enginearing students. 
+https://youtu.be/hB8KYbKHnM8"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you
+!,@,#,$,%,U,^,&,*,(,)
+just want to notify that there is an error in notes ... in the for loop statement of bubble sort ...n-counter will be there instead of n-counter-1 :)
+!,@,#,$,%,U,^,&,*,(,)
+5:40 yaha pe while loop ki jagah for loop bhi laga sakte the n
+!,@,#,$,%,U,^,&,*,(,)
+8.3.1 ACTUALLY
+!,@,#,$,%,U,^,&,*,(,)
+Bubble sort code is not working  :-((
+!,@,#,$,%,U,^,&,*,(,)
+can anyone send me the chocolate solution
+!,@,#,$,%,U,^,&,*,(,)
+"instead of the while loop we can also do this :
+
+for(i=count-2;i>=0;i--){
+      for(j=0;j<=i;j++){
+        if(number[j]>number[j+1]){
+           temp=number[j];
+           number[j]=number[j+1];
+           number[j+1]=temp;"
+!,@,#,$,%,U,^,&,*,(,)
+The spelling of repeatedly is wrong in the bubble sort statement!
+!,@,#,$,%,U,^,&,*,(,)
+why did we wirte counter ++
+!,@,#,$,%,U,^,&,*,(,)
+"best explanation on this topic, the visuals were extraordinarily effective"
+!,@,#,$,%,U,^,&,*,(,)
+"#include<iostream>
+using namespace std;
+void swap(int arr[],int i,int j)
+{
+ int temp=arr[j];
+arr[j]=arr[i];
+arr[i]=temp;
+return;
+}
+int main()
+{
+ int n;
+cin>>n;
+int arr[n];
+
+ for(int i=0;i<n;i++)
+{
+cin>>arr[i];
+}
+
+for(int k=n-1;k>=1;k--)
+{ for(int i=0;i<k;i++)
+  {int j=i+1;
+    if (arr[i]>arr[j])
+     {
+       swap(arr,i,j);
+      }
+  }
+}
+for(int i=0;i<n;i++)
+{
+cout<<arr[i]<<"" "";
+}
+return 0; 
+}
+My code🙂"
+!,@,#,$,%,U,^,&,*,(,)
+Amazing🔥🔥🔥🔥🔥❤️❤️
+!,@,#,$,%,U,^,&,*,(,)
+Her voice feels 1.25x
+!,@,#,$,%,U,^,&,*,(,)
+hard and confusing
+!,@,#,$,%,U,^,&,*,(,)
+same notes as lecture 8.3.1
+!,@,#,$,%,U,^,&,*,(,)
+"Yar complexity  mat badhao ye aasan hai samjne me
+
+void bubbleSort(int arr[],int len){
+
+    while(len-->0){
+    std::cout<<len<<std::endl;
+    for(int i=0;i<len;i++){
+        if(arr[i]>arr[i+1]){
+            int temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1]=temp;
+        }
+    }
+  }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+If you don't understand this video see my video why two for loop used in bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+DIDI your voice is so attractive  and I like your intro as well as your content is fantastic more help to me  preparation for  placement
+!,@,#,$,%,U,^,&,*,(,)
+hello whats the ddifference between the bubble sort and selection sort code..  its just that in bubble sort the loop we use is while instead of for loop.....
+!,@,#,$,%,U,^,&,*,(,)
+"*NOTE*- COUNTER MUST BE INITIALIZED WITH 0 INSTEAD OF 1, as she explains... But taken 1 mistakenly.... #CHLO PHODTE HYY ✨⚡😎"
+!,@,#,$,%,U,^,&,*,(,)
+dislikes from chintu's companies employee's.
+!,@,#,$,%,U,^,&,*,(,)
+thank you.......
+!,@,#,$,%,U,^,&,*,(,)
+Thank uh
+!,@,#,$,%,U,^,&,*,(,)
+thank you very much yrr it really helps ......and the music is also motivating....
+!,@,#,$,%,U,^,&,*,(,)
+Dhanyawaad
+!,@,#,$,%,U,^,&,*,(,)
+while (counter<n)
+!,@,#,$,%,U,^,&,*,(,)
+"There is a mistake in this code ,the last input no is not get check or swap.
+Int counter is starting form 1 and if the input is 
+(54321 it will give 23451 ) it is not checking the last element. 
+Plz check this .
+Y the counter is not staring from 0."
+!,@,#,$,%,U,^,&,*,(,)
+Can we get the combined pdf of notes of all the lec...
+!,@,#,$,%,U,^,&,*,(,)
+Mam ehat is the time complexity? You forgot to explain
+!,@,#,$,%,U,^,&,*,(,)
+"#include<bits/stdc++.h>
+using namespace std;
+
+void Swap(int* lef, int* rig){
+    int temp = *lef;
+    *lef = *rig;
+    *rig = temp;
+}
+
+void Bubble(int arr[] , int SIZE){
+    for(int i = 1; i < SIZE; i ++){
+        int count = 0;
+        for(int j = 0; j < SIZE - 1; j++){
+            if(arr[j] > arr[j+1]){
+                Swap(&arr[j],&arr[j+1]);
+                count++;
+            }
+        }
+        if(count == 0)
+            break;
+    }
+}
+
+void Display(int arr[] , int SIZE){
+    for(int i = 0; i < SIZE; i++)
+        cout << arr[i] << "" "";
+    cout << endl;
+}
+
+int main(){
+    int n;
+    cout << ""Enter the number of elements: "" << endl;
+    cin >> n;
+    int arr[n];
+    cout << ""Enter the array elements: "" << endl;
+    for(int i = 0; i < n ; i++)
+        cin >> arr[i];
+    Bubble(arr,n);
+    cout << ""Sorted array is: "" << endl;
+    Display(arr,n);
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+in while condition the counter should be less than n right not n-1 !?
+!,@,#,$,%,U,^,&,*,(,)
+Thanx mam
+!,@,#,$,%,U,^,&,*,(,)
+Plz share the solution of chocolate problem.....
+!,@,#,$,%,U,^,&,*,(,)
+Sorting ke itne sare method kyu h ?
+!,@,#,$,%,U,^,&,*,(,)
+its not efficent because if the array gets sorted after 1 pass then too the loop will continue instead of that it should break ....(My Views)
+!,@,#,$,%,U,^,&,*,(,)
+"well i prefer this code. 
+    
+//Sorting is done here
+    for(int i=0; i<n-1; i++){
+        for(int j=0; j<n-1-i; j++){
+            if(arr[j]>arr[j+1]){
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }"
+!,@,#,$,%,U,^,&,*,(,)
+5:09 n-1 is missing in the counter
+!,@,#,$,%,U,^,&,*,(,)
+I was able to code the bubble sort algorithm just by the explanation part of this video. Thank you very much !!
+!,@,#,$,%,U,^,&,*,(,)
+"int arr[n];
+ye declare karne par error araha hae 
+ye: expression must have a constant value -- the value of variable ""n"" (declared at line 5) cannot be used as a constantC/C++(28)"
+!,@,#,$,%,U,^,&,*,(,)
+Koi batayega ki me array ki size 3 leta hu toh mera ans kyu ni aata ??😭
+!,@,#,$,%,U,^,&,*,(,)
+"when we take input: 2 6 4 3 1
+it gives output: 2 1 3 4 6
+why?? plz try it"
+!,@,#,$,%,U,^,&,*,(,)
+sirf ma hi hu kya jisko n-1 nahi dikh ra h?
+!,@,#,$,%,U,^,&,*,(,)
+Awesome explaining in just 7 min.
+!,@,#,$,%,U,^,&,*,(,)
+"Complete code ek saath dikh jata to shi rhta😊
+baaki video jbrdsttt hai 👌👌💥💥💥"
+!,@,#,$,%,U,^,&,*,(,)
+Why we did not we put       return 0;    in this code?
+!,@,#,$,%,U,^,&,*,(,)
+"Ma'am, our counter must be initialized by 0 logically. Right?"
+!,@,#,$,%,U,^,&,*,(,)
+line no 15: she said n-1 but only n why?
+!,@,#,$,%,U,^,&,*,(,)
+"Great content. thanx! , no offence but while loop can be replaced with for loop 
+like this comment so that others can see!
+following is code :
+//Bubble Sort Algorithm. 
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int Num;
+  cout<<""Enter length of array : ""<<endl;
+  cin>>Num;
+  int Arr[Num];
+  cout<<""Enter Array : ""<<endl;
+  for(int s = 0; s < Num; s++)
+  {
+    cin>>Arr[s];
+  }
+
+  //int Flag = 1;
+  //while(Flag < Num)
+  for(int Flag = 1; Flag < Num; Flag++)
+  {
+    for(int m = 0; m < Num-Flag; m++)
+    {
+      if(Arr[m] > Arr[m+1])
+      {
+        int Temporary = Arr[m];
+        Arr[m] = Arr[m+1];
+        Arr[m+1] = Temporary;  
+      }
+    }
+    //Flag++;
+  }
+
+  cout<<""Sorted array is : ""<<endl;
+  for(int j = 0; j < Num; j++)
+  {
+    cout<<Arr[j]<<"" "";     
+  }
+  cout<<endl;
+  return 0;
+}
+
+just thought to share!
+like this comments so others can also see."
+!,@,#,$,%,U,^,&,*,(,)
+"can anyone explain this
+arrey- 31 11 27 2 19
+it has 5 elements and according to this video this array should be sorted in 4 steps but in this case, it gets sorted in only 3 steps.
+if this is happening then the compiler will iterate this one more time and  which will increase compilation time.
+can anyone explain this
+Thank You."
+!,@,#,$,%,U,^,&,*,(,)
+🦋💚☘️🍁
+!,@,#,$,%,U,^,&,*,(,)
+"3:55 pe n-1 ke jagah n-0 (and so on) hona chaiye shyd 
+IDK i am not sure about that ??
+Can someone explain plz..."
+!,@,#,$,%,U,^,&,*,(,)
+Bgm koi bata do
+!,@,#,$,%,U,^,&,*,(,)
+love u guys
+!,@,#,$,%,U,^,&,*,(,)
+"apart from using 'while + for' loop, one can also use double-for loops:
+
+for(int i=0;i<n-1;i++){
+
+
+        for(int j=0;j<(n-i);j++){
+
+
+            if(arr[j]>arr[j+1]){
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }"
+!,@,#,$,%,U,^,&,*,(,)
+Please make a video on how to make a  floating donut in code
+!,@,#,$,%,U,^,&,*,(,)
+Thanks ☺️
+!,@,#,$,%,U,^,&,*,(,)
+"we can execute this code by using for loop also.
+
+#include<iostream>
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	
+	int arr[n];
+	for(int i=0;i<n;i++){
+		cin>>arr[i];
+	}
+	
+	for(int counter=1;counter<n;counter++){
+		for(int i=0;i<n-counter;i++){
+			if(arr[i]>arr[i+1]){
+				int temp=arr[i+1];
+				arr[i+1]=arr[i];
+				arr[i]=temp;
+			}
+		}
+	}
+	for(int i=0;i<n;i++){
+		cout<<arr[i]<<endl;
+	
+}
+}"
+!,@,#,$,%,U,^,&,*,(,)
+int arr[n] is showing an error. It says the array should be declared.
+!,@,#,$,%,U,^,&,*,(,)
+This is awesome! Very concise and informative😍
+!,@,#,$,%,U,^,&,*,(,)
+Hi everyone what's up....at 0:01👌👌👌
+!,@,#,$,%,U,^,&,*,(,)
+"I don't think anyone can explain the bubble concept so easily than how our Didi teaches us 😍❤️
+*** The  condition inside while loop should be counter<n-1"
+!,@,#,$,%,U,^,&,*,(,)
+"Another way to write the same code using nested for loops:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int c;
+    cin>>c;
+    int arr[c];
+    for(int i=0;i<c;i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i=c-1;i>=0;i--)
+    {
+        for(int j=0;j<i;j++)
+        {
+            if(arr[j+1]<arr[j])
+            {
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+
+        }
+    }
+    for(int i=0;i<c;i++)
+    {
+        cout<<arr[i]<<"" "";
+    }
+    cout<<endl;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+how will you achieve 0(n) complexity in the best case using this method?
+!,@,#,$,%,U,^,&,*,(,)
+"Bubble short ka ye bhi shi hai:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int temp=0;
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(int j=0;j<n-1;j++)
+    {
+        for(int k=0;k<n-j;k++)
+        {
+            if(a[k]>a[k+1])
+            temp=a[k];
+            a[k]=a[k+1];
+            a[k+1]=temp;
+        }
+    }
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<"" "";
+    }
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+What a content madam nice
+!,@,#,$,%,U,^,&,*,(,)
+"Can anyone tell me if I can go with this code for bubble sort? :"")
+
+
+include<iostream>
+using namespace std;
+
+int main()
+{
+    int n,temp;
+    cout<<""Enter the number of elements : "";
+    cin>>n;
+    int arr[n];
+    for(int i = 0; i<n; ++i)
+    {
+        cout<<""Enter the elemenet number ""<<i+1<<"" : "";
+        cin>>arr[i];
+    }
+
+    for(int l = 1; l<=n; ++l)
+    {
+        for(int j = 0; j<n-1; ++j)
+        {
+            if (arr[j]>arr[j+1])
+            {
+                temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    for(int k = 0; k<n; ++k)
+    {
+        cout<<arr[k]<<"" "";
+    }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+Apti or DBMS ke liye bhi bana d0 bhaiiyyaa🥺🥺
+!,@,#,$,%,U,^,&,*,(,)
+"Teaching qualities are very well but speed is very high....
+ Please try to reduce teaching speed...
+ Please upload video on Java and data structure and algorithm
+
+🥰❤️🥰 love from tier 3 college ❤️🥰❤️"
+!,@,#,$,%,U,^,&,*,(,)
+i loveeee ur HAIN NA!!!  :)
+!,@,#,$,%,U,^,&,*,(,)
+Best video
+!,@,#,$,%,U,^,&,*,(,)
+Time complexity:O(N^2)
+!,@,#,$,%,U,^,&,*,(,)
+Anyone doing this cpp course wanna connect with me?....so that we can solve each other doubts
+!,@,#,$,%,U,^,&,*,(,)
+plz add one note in your teaching method it will be lot easier to understand
+!,@,#,$,%,U,^,&,*,(,)
+"mera output is something like this - 
+unsorted array -  1 6 3 7 9 2
+>>>> 222222"
+!,@,#,$,%,U,^,&,*,(,)
+superb explanation👌👌
+!,@,#,$,%,U,^,&,*,(,)
+i found this with better time complexity : https://www.youtube.com/watch?v=eLaUgN0T-p0
+!,@,#,$,%,U,^,&,*,(,)
+Code karte time thoda detail me samjha diya karo please.......
+!,@,#,$,%,U,^,&,*,(,)
+why counter is used
+!,@,#,$,%,U,^,&,*,(,)
+"matlab itne tagde tagde videos ko dislike q 
+q aisa karte ho yar"
+!,@,#,$,%,U,^,&,*,(,)
+"//bubblesort c++ code
+#include<iostream>
+using namespace std;
+
+int bubblesort(int arr[],int n)
+{
+    int v1,v2;
+    int r_n=n;
+    while(n>1)
+    {
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>arr[i+1]){int rem=arr[i];arr[i]=arr[i+1];arr[i+1]=rem;}
+        }
+        n-=1;
+    }
+    cout<<""The sorted array is:""<<endl;
+    for(int i=0;i<r_n;i++)
+    {
+        cout<<arr[i]<<endl;
+    }
+}
+
+
+
+int main()
+{
+    //code for arrainging the array from small value to big value using bubble sort algo
+    int n,i;
+    cout<<""Enter the length of string:"";
+    cin>>n;
+    int val[n];
+    cout<<""Enter all the ""<<n<<"" values of the array""<<endl;
+    for(i=0;i<n;i++)
+    {
+        cin>>val[i];
+    }
+    bubblesort(val,n);
+}"
+!,@,#,$,%,U,^,&,*,(,)
+Really well explained
+!,@,#,$,%,U,^,&,*,(,)
+Can't We implement nested for loops instead of using while and for together... it will make it less confusing
+!,@,#,$,%,U,^,&,*,(,)
+Awesome mam after trying to visualise continue 8 hr then i come to video and in shot i got it all points thanku mam
+!,@,#,$,%,U,^,&,*,(,)
+"A tiny mistake at 4:59 where u said counter<n-1; 
+Correction : while(counter<n)
+Thanks for the video. ♥️"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you
+!,@,#,$,%,U,^,&,*,(,)
+"Can we use the below code for bubble sorting ? Please someone reply...
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<""enter n\n"";
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int p=n;
+    
+    for(int k=0;k<n;k++)
+    {
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]>arr[j])
+                {
+                    int t=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=t;
+                }
+                break;
+
+            }
+        }
+        n--;
+        
+    }
+    cout<<endl;
+    for(int i=0;i<p;i++)
+    {
+        cout<<arr[i]<<endl;
+    }
+
+}"
+!,@,#,$,%,U,^,&,*,(,)
+can anyone explain why there is counter=1
+!,@,#,$,%,U,^,&,*,(,)
+sir really thanx a lot you all are doing nice job
+!,@,#,$,%,U,^,&,*,(,)
+"Below is the bubble sort that i have done based on her explaination.....any comments on its time complexity.
+for(int i=0; i<n-1; i++){
+       for(int j=0; j<n-1-i; j++){
+           if(a[j]>a[j+1]){
+               int temp=a[j];
+               a[j]=a[j+1];
+               a[j+1]=temp;
+           }
+       }
+   }"
+!,@,#,$,%,U,^,&,*,(,)
+bubble sort ki time complexity to zyada ho jayegi na??
+!,@,#,$,%,U,^,&,*,(,)
+"Can Anyone explain why counter var starts from 1 and not from 0 ??
+
+please reply"
+!,@,#,$,%,U,^,&,*,(,)
+"can some one check if we enter least value at end than it show perfectly or the least value at second position
+because i get my least number at second position when i enterd it last
+but whene i take counter=0 then it shows perfectly"
+!,@,#,$,%,U,^,&,*,(,)
+This can be minimised by putting a boolean for checking whether there are swaps or not. If there are no swaps then it proves that the array is already sorted no need to go ahead and hence breaking the loop.
+!,@,#,$,%,U,^,&,*,(,)
+Bubble sorting algorithm wasnt time efficient!!!
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks a lot, ye bubble sort confuse kar diya tha teachers ne....ab jaake iska concept dhang se samajh aaya hai, final year mai hu abhi ......this series gives me hope that even I can learn these concepts properly."
+!,@,#,$,%,U,^,&,*,(,)
+"Whoever want discussion related to coding dm me on Instagram  account as coding_masterr 
+Let's crack it ."
+!,@,#,$,%,U,^,&,*,(,)
+Ye beats ka link dedo koi
+!,@,#,$,%,U,^,&,*,(,)
+"I just wanted to know 
+Can we use  our own thinking for sort program or is it fixed"
+!,@,#,$,%,U,^,&,*,(,)
+nice content . but also checkout log2base2 . they also make  promamming videos with animation.
+!,@,#,$,%,U,^,&,*,(,)
+"This should work as well: 
+for (int i=0; i<n; i+=1) {
+    for (int j=0; j<=n-i; j+=1) {
+        int a = arr[j];
+        if (arr[j]>arr[j+1]) {
+            arr[j] = arr[j+1];
+            arr[j+1] = a;
+        }
+    }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+Ma'am your voice is so listenable. Great explanation. Thank u so much
+!,@,#,$,%,U,^,&,*,(,)
+"Can anyone tell me why it is not working?
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0; i<n; i++)
+    {
+        cin>>n;
+    }
+    int counter=1;
+    while(counter=n)
+    {
+    for(int i= 0; i<n-counter; i++)
+    {
+        if(arr[i]>arr[i+1])
+        {
+            int temp= arr[i];
+            arr[i]= arr[i+1];
+            arr[i+1]= temp;
+        }
+    }
+    counter++;
+    }
+    for(int i=0; i<n; i++)
+    {
+        cout<<arr[i];
+    }
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+"Notes - 
+Bubble Sort - Concept - [0:10]
+Bubble Sort - Code - [4:40]"
+!,@,#,$,%,U,^,&,*,(,)
+"Hi @Aman dhattrawal bhaiya,
+Please tell us about BCCA .
+Carrer, placement, further studies, etc 
+And chance to gets @iits after MCA .
+Thanks @Apna college"
+!,@,#,$,%,U,^,&,*,(,)
+"YOU ARE  doing very good job ,best teacher!!"
+!,@,#,$,%,U,^,&,*,(,)
+how is value of counter is updating
+!,@,#,$,%,U,^,&,*,(,)
+This intro music just pump us up to study hard❤️❤️❤️❤️
+!,@,#,$,%,U,^,&,*,(,)
+Thank u aman bhaia mam i m loving your explanation ❤ 😍
+!,@,#,$,%,U,^,&,*,(,)
+"Counter < n hoga in while condition. I think.
+
+Ma'am ke code mei bhi -1 type nahi hua (maybe due to some error)"
+!,@,#,$,%,U,^,&,*,(,)
+"Didi, ye merge sort kya hota hai ?"
+!,@,#,$,%,U,^,&,*,(,)
+"@apnacollege Please help, Why I'm getting this error in every program
+
+D:\c c++ VS WORK>cd ""d:\c c++ VS WORK\"" && g++ dataTypes.cpp -o dataTypes &&
+
+\c c++ VS WORK\""dataTypes
+
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot
+
+collect2.exe: error: ld returned 1 exit status"
+!,@,#,$,%,U,^,&,*,(,)
+"5:25 didi ham ek swap() function ka bhi to use kar sakte hai bas swap(arr[i], arr[i+1]); ek line me ho jata 3 lines ke jagah"
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you so much. You made these concepts so easy for me that looked difficult previously for me. Now, I taught these to my fellow classmates even before they knew."
+!,@,#,$,%,U,^,&,*,(,)
+"Hallo Mam,
+As you said that we will check with While if counter is less than n-1... but you checked there (counter < n) instead of (n-1).. and how is it possible to run successfully......OR i am wrong here"
+!,@,#,$,%,U,^,&,*,(,)
+Kuch samaj nhi aaya
+!,@,#,$,%,U,^,&,*,(,)
+"mam i have an dout if we enter 5 no. in output and we enter only 1 no. but we use a dot after that no. than why rest of the 4 no. is automatically selected
+i mean to say when we run the program enter the same no. and press enter after every line 
+9
+1
+2
+7."
+!,@,#,$,%,U,^,&,*,(,)
+"[CORRECTION]
+In the while statement of the program, (counter<n-1) isn't showing in the video"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much ❤️😊
+!,@,#,$,%,U,^,&,*,(,)
+Aman bhiya plz see dm of insta...plz bhaiya
+!,@,#,$,%,U,^,&,*,(,)
+tim sort pr bhi please ek video bana dijiye 🙏
+!,@,#,$,%,U,^,&,*,(,)
+The program was taught bit fast. I wish it would be explained in slow and steady in upcoming videos🙏
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya  I drop after 12 th  still I go to dtu btech lower branch. This is first time I am really dedicated to online courses .so please tell me if I have  lower branch in dtu then can I crack  good placement if I invest every day  2-3 hours to your course dedicatedly for four years.
+!,@,#,$,%,U,^,&,*,(,)
+Very easy to understand it now rather than boring lecture in class
+!,@,#,$,%,U,^,&,*,(,)
+everything is awesome but it is not begginer friendly i feel in south india we will not have any knowledge before getting into btech so i am not able to understand everything properly i think the people who have already some knowledge can do it well
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya topic wise questions bhi dedo notes mein please
+!,@,#,$,%,U,^,&,*,(,)
+"Video number 20 is private video, why?"
+!,@,#,$,%,U,^,&,*,(,)
+"Please, audio quality is not good btw this course is great"
+!,@,#,$,%,U,^,&,*,(,)
+"Can't we print the entire array just like in python (list),
+Is it necessary to run that for loop and print the elements one by one ???
+Plzz reply 
+Plzzzzzzzz"
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya , please make a video on IP university order of choice filling 🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya just a reminder( I know you definately remeber) 
+Please upload the notes of 8.2 video 
+They aren't uploaded yet 🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+"MY CODE:
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    int n = 7;
+    int b;
+    int arr[n] = {1,4,3,8,4,1,6};
+    for (int i = 0; i < n-1; i++)
+    {
+        for (int j = 0; j < n-i; j++)
+        {
+            if (arr[j] > arr[j+1])
+            {
+                b = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = b;
+            }
+            
+        }
+        
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << "" "";
+    }
+    
+    
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+@ApnaCollege bhaiya aapne videp no.20 private kr di h please use public krdijeye
+!,@,#,$,%,U,^,&,*,(,)
+Aman bhaiya 10 min pehle likha kud ka code hi kyu  ununderstandable lagne lagta hai??
+!,@,#,$,%,U,^,&,*,(,)
+Coding ninjjas coding blocks gge alphabet ke L lagaye 😂
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya aapke kai saare course beech me hee band ho jaate hain,please isko complete karana"
+!,@,#,$,%,U,^,&,*,(,)
+"hi bubble sort is a very hard topic and with the help of animation you made it very easy har's off to you guys
+
+
+love from nit Warangal"
+!,@,#,$,%,U,^,&,*,(,)
+"BHAIYA THDA JLDI JLDI VIDEO UPLOAD KRO PLEASE....YA FIR VIDEO BADI BANAO.😅
+BTW THANKS FOR THIS AMAZING CONTENT ❤️"
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya 8.2 ke notes kb upload krenge...???
+!,@,#,$,%,U,^,&,*,(,)
+"after the whole c++ course , plz give videos for gfg important questions algorithms."
+!,@,#,$,%,U,^,&,*,(,)
+Why No ads?
+!,@,#,$,%,U,^,&,*,(,)
+Please mam learn hello world 10 time kevi ritna lakhvu
+!,@,#,$,%,U,^,&,*,(,)
+"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    int a[n];
+    for (int i=0;i<n;i++)
+    {
+        cin>>a[i];
+        
+    }
+    int counter=1;
+    while(counter<n)
+    {
+        for(int i=0;i<n-counter;i++)
+        {
+            if (a[i]>a[i+1])
+            {
+                int temp;
+                temp=a[i];
+                a[i]=a[i+1];
+                a[i]=temp;
+            }
+        }
+        counter++;
+    }
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i];
+    }
+    return 0;
+}
+help me cant really find the output."
+!,@,#,$,%,U,^,&,*,(,)
+Bhiya ek topic pe or videos bana do 🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏 digital logic and circuit ka 🙏🙏🙏🙏🙏🙏🙏🙏🙏
+!,@,#,$,%,U,^,&,*,(,)
+"Sir plzz add puzzle in every vidio
+We really enjoy it"
+!,@,#,$,%,U,^,&,*,(,)
+WHY video number 20. is private ?
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya we development ka course kb aayega
+Aap ne bola tha insta pr 10 dino aayenga
+10 din to ho gye🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+It will be good if you speak slowly
+!,@,#,$,%,U,^,&,*,(,)
+web development kab aayega..
+!,@,#,$,%,U,^,&,*,(,)
+mam videos delay kyo ho rahi hai ??
+!,@,#,$,%,U,^,&,*,(,)
+"After C++ course, If u have time may u plz start a gameDEV. course bcz in India there are very few channels for gameDEV. and limited courses."
+!,@,#,$,%,U,^,&,*,(,)
+"*DOUT*
+what is the time complexity of this code. And y did we swap the elements of the array everytime we find that they are in wrong order, I mean we could just find the largest number in the array and swap it with the last element of the array. Wouldn't that be faster than swapping many times to get the largest element to the end ? Swapping many times in each iteration would increase the time taken by the code 🤔"
+!,@,#,$,%,U,^,&,*,(,)
+Amazing! Amazing! Amazing! 🔥🔥🔥🔥🔥💥💥💥
+!,@,#,$,%,U,^,&,*,(,)
+well its (counter<n) not (counter<n-1) because in counter<n-1 it is having one iteration less than what is required. Try giving 5 4 3 2 1 as input with the code in video and you will get to know what i'm trying to tell ya'll....
+!,@,#,$,%,U,^,&,*,(,)
+monetize kar lou channel please!!
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya Mene VS code download Kar liya lekin terminal se Jo software download karna tha vo download nhi ho raha. Mene hello world ka code run karke check kiya to right bottom me show kar Raha he ""Code language not supported or defined"" plzz bhaiya help me."
+!,@,#,$,%,U,^,&,*,(,)
+Nice Explanation mam
+!,@,#,$,%,U,^,&,*,(,)
+Well done broo!
+!,@,#,$,%,U,^,&,*,(,)
+Good 😊
+!,@,#,$,%,U,^,&,*,(,)
+Meeru super ga chepthunnaru medam
+!,@,#,$,%,U,^,&,*,(,)
+MAM your teaching style is very good please more videos make for data structure
+!,@,#,$,%,U,^,&,*,(,)
+Nice
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much 🥰🥰
+!,@,#,$,%,U,^,&,*,(,)
+Nice explanation
+!,@,#,$,%,U,^,&,*,(,)
+Example ante working (or) program
+!,@,#,$,%,U,^,&,*,(,)
+Thank you very much. Simple and very clear explanation.
+!,@,#,$,%,U,^,&,*,(,)
+Well told
+!,@,#,$,%,U,^,&,*,(,)
+"thanks, well explained"
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you madam, you are great, you explain everything easy,"
+!,@,#,$,%,U,^,&,*,(,)
+In this example how many iteration done?
+!,@,#,$,%,U,^,&,*,(,)
+your hands are  attractive....
+!,@,#,$,%,U,^,&,*,(,)
+Thank you
+!,@,#,$,%,U,^,&,*,(,)
+Thnx you ma'am 😊😊😊😊
+!,@,#,$,%,U,^,&,*,(,)
+very helpful for me thanks
+!,@,#,$,%,U,^,&,*,(,)
+Thanks 😊 ❤
+!,@,#,$,%,U,^,&,*,(,)
+Nice tutorials and very glad for beneficial
+!,@,#,$,%,U,^,&,*,(,)
+Mam your voice is very sweet ❤
+!,@,#,$,%,U,^,&,*,(,)
+I learned all concept
+!,@,#,$,%,U,^,&,*,(,)
+Mam your teaching method is very good 😊👍
+!,@,#,$,%,U,^,&,*,(,)
+"can we swap 4 at a time 
+like i mean 5 7 3 2 4 assume this set 
+first we will swap 7 and 3 then 5 3 7 24
+now in this step can we swap 5 & 3 and 7 & 2 at a time ?"
+!,@,#,$,%,U,^,&,*,(,)
+Very good and simple explanation. Well done !
+!,@,#,$,%,U,^,&,*,(,)
+"Helpful. 
+I am candidates final year of mathematics. 
+Take love"
+!,@,#,$,%,U,^,&,*,(,)
+can bubble sort and selection sort be used for sorting letters?
+!,@,#,$,%,U,^,&,*,(,)
+i love your voice thank you
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you so much, I really needed this ."
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks for giving this level knowledge of data structures subject , great explanation of every topic , but I don't know reason behind your Channel is not activate now, and no more video on any other programing language
+Thanks ❤️❤️love and best wishes 👍👍 from gujrat
+Please reply"
+!,@,#,$,%,U,^,&,*,(,)
+Great job mam 😍v nice explaination😍😍
+!,@,#,$,%,U,^,&,*,(,)
+Thank you very much...🙏
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so m
+!,@,#,$,%,U,^,&,*,(,)
+Thanks is a small word for you but what can i do thanks thankyou very much
+!,@,#,$,%,U,^,&,*,(,)
+Thank you mam ❤️
+!,@,#,$,%,U,^,&,*,(,)
+"useful vedio at exam time\
+----"
+!,@,#,$,%,U,^,&,*,(,)
+Iteration?
+!,@,#,$,%,U,^,&,*,(,)
+😍
+!,@,#,$,%,U,^,&,*,(,)
+Nice explenation
+!,@,#,$,%,U,^,&,*,(,)
+Finally learn about bubble sorting Thanks Ma'am
+!,@,#,$,%,U,^,&,*,(,)
+Thanks
+!,@,#,$,%,U,^,&,*,(,)
+❤❤❤❤ really valueble explain
+!,@,#,$,%,U,^,&,*,(,)
+"Can u solve this problem madam
+75,17,15,22,54,40"
+!,@,#,$,%,U,^,&,*,(,)
+But i has only required 3 pasess out of n=5 how
+!,@,#,$,%,U,^,&,*,(,)
+Really you are a great teacher ❤️
+!,@,#,$,%,U,^,&,*,(,)
+Mam u should also add algorithm... But u did great job..... I also learned why the time complexity is O(n^2).. thanks and keep it up mam...👍👍👍
+!,@,#,$,%,U,^,&,*,(,)
+Superb
+!,@,#,$,%,U,^,&,*,(,)
+Thanks
+!,@,#,$,%,U,^,&,*,(,)
+plz make serise  vedio
+!,@,#,$,%,U,^,&,*,(,)
+what is a great teaching
+!,@,#,$,%,U,^,&,*,(,)
+u r a gem
+!,@,#,$,%,U,^,&,*,(,)
+Awesome mam
+!,@,#,$,%,U,^,&,*,(,)
+Oswm mam...after watching so many videos i like it
+!,@,#,$,%,U,^,&,*,(,)
+"50 videos completed in Data Structures playlist. Half Century! 😊✌
+Share kar dena Instagram par - Instagram.com/CodeWithHarry"
+!,@,#,$,%,U,^,&,*,(,)
+mann.. you are my life Savior 😭....thank you so much..
+!,@,#,$,%,U,^,&,*,(,)
+Thank You Harry sir 💕
+!,@,#,$,%,U,^,&,*,(,)
+Congrats for half century ❤❤❤❤💪💪💪💪
+!,@,#,$,%,U,^,&,*,(,)
+HARRY bhaiya you are a G.O.A.T 😌👌👌👍
+!,@,#,$,%,U,^,&,*,(,)
+Thank you harry bhai . Tomorrow is my exam and you made that easy for me 💖💥 thanks alot brother
+!,@,#,$,%,U,^,&,*,(,)
+concepts explained crystal clear
+!,@,#,$,%,U,^,&,*,(,)
+It is effortless understanding 💕💕💕💕💕💕
+!,@,#,$,%,U,^,&,*,(,)
+shinzoo sassageyo
+!,@,#,$,%,U,^,&,*,(,)
+Congrats sir for half century 🥳 This playlist is very helpful 💥💥
+!,@,#,$,%,U,^,&,*,(,)
+Learning bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+congratulations sir💜 for half century and thanks for providing these lectures for free💜⚡️ very much thankyou sir🔥💚
+!,@,#,$,%,U,^,&,*,(,)
+congratulations sir for half century!!!💯💥💥
+!,@,#,$,%,U,^,&,*,(,)
+sheikh soaib
+!,@,#,$,%,U,^,&,*,(,)
+DSA's half century done😍
+!,@,#,$,%,U,^,&,*,(,)
+Thanks
+!,@,#,$,%,U,^,&,*,(,)
+Reached Half Century Harry Bhai ❤‍🔥
+!,@,#,$,%,U,^,&,*,(,)
+"Congratulations, harry bhai🥳"
+!,@,#,$,%,U,^,&,*,(,)
+congratulations bro for half sentury
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations bro your explanation technology is awesome
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations! For Half Century...
+!,@,#,$,%,U,^,&,*,(,)
+"Half century . 
+congratulations......"
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations for 50 Episodes to everyone and aapko bhi Harry Bhai🤗🤗
+!,@,#,$,%,U,^,&,*,(,)
+Sir is bubble sort is an ascending order
+!,@,#,$,%,U,^,&,*,(,)
+plz make DSA in java😢
+!,@,#,$,%,U,^,&,*,(,)
+I have watched many videos
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations bhaiii 🎉
+!,@,#,$,%,U,^,&,*,(,)
+"bhaeya , i really appreciate your hard work , app se main bohot kuch sikh paya .i 'am really very thankful to you"
+!,@,#,$,%,U,^,&,*,(,)
+Great work bruhh
+!,@,#,$,%,U,^,&,*,(,)
+25:48 🤣🔥
+!,@,#,$,%,U,^,&,*,(,)
+Thanks Harry bhai for this video ❤️
+!,@,#,$,%,U,^,&,*,(,)
+Harry sir I want handwritten nites please mail
+!,@,#,$,%,U,^,&,*,(,)
+Congratulation Harry sir and to everyone😊😊
+!,@,#,$,%,U,^,&,*,(,)
+"Harry bhai yaqeen maanen 10 videos dekhchuka lekn 1 lafz nhi smjh arha tha, apki video dekhty hi smjh agya kya baat hai yar god bless you"
+!,@,#,$,%,U,^,&,*,(,)
+watching Today and tomorrow is exam🙄🥺
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations Harry bhai for half century of this playlist  🎉👏🥳
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much Harry bhai for such a great Course 🙏🙏🙏
+!,@,#,$,%,U,^,&,*,(,)
+n(n-1)/2=o(n2)How??🤔
+!,@,#,$,%,U,^,&,*,(,)
+congratulate
+!,@,#,$,%,U,^,&,*,(,)
+Thank you Harry😊... Bubble sort samaj aa gaya🤩❤️
+!,@,#,$,%,U,^,&,*,(,)
+Congo bro on our journey👀👀🔥🔥
+!,@,#,$,%,U,^,&,*,(,)
+Half Century! Congratulation
+!,@,#,$,%,U,^,&,*,(,)
+DFS
+!,@,#,$,%,U,^,&,*,(,)
+Amazing Explanation!!!!!!
+!,@,#,$,%,U,^,&,*,(,)
+You are awesome :)
+!,@,#,$,%,U,^,&,*,(,)
+Half century completed
+!,@,#,$,%,U,^,&,*,(,)
+Wahh bhai kitnyy talented oo 🎈 😂
+!,@,#,$,%,U,^,&,*,(,)
+Congrats🤩🤩
+!,@,#,$,%,U,^,&,*,(,)
+"ad: Understanding data structure & algorithm is difficult😭
+le harrry bhai:😎😎"
+!,@,#,$,%,U,^,&,*,(,)
+congrats sir
+!,@,#,$,%,U,^,&,*,(,)
+#50😊
+!,@,#,$,%,U,^,&,*,(,)
+Half Century done and also congrats to all peoples who made it here after watching all the lectures.
+!,@,#,$,%,U,^,&,*,(,)
+half century completed
+!,@,#,$,%,U,^,&,*,(,)
+25:44 ha sir gubara mele me milta hai
+!,@,#,$,%,U,^,&,*,(,)
+Half Century In DSA playlist
+!,@,#,$,%,U,^,&,*,(,)
+Superb 😍
+!,@,#,$,%,U,^,&,*,(,)
+""
+!,@,#,$,%,U,^,&,*,(,)
+(n(n+1))/2
+!,@,#,$,%,U,^,&,*,(,)
+"congrats on the 50th video, It is very helpful"
+!,@,#,$,%,U,^,&,*,(,)
+Bhai iska code kidhar hai
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations...
+!,@,#,$,%,U,^,&,*,(,)
+i will continue the full course and congratulations
+!,@,#,$,%,U,^,&,*,(,)
+"Great work ........ Anyone can easily understand with your lecture videos......Thank you @CWH
+
+amazing lectures :)"
+!,@,#,$,%,U,^,&,*,(,)
+Congrats bro I watched all of these 50. I am really proud of myself
+!,@,#,$,%,U,^,&,*,(,)
+Guys make sure to like and share this video
+!,@,#,$,%,U,^,&,*,(,)
+25:48 Wow! Kya talent hai....😂😂😂😂😂😂🤣🤣🤣🤣
+!,@,#,$,%,U,^,&,*,(,)
+congrats on the 50th video 100% understood thanks harry bhai
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations
+!,@,#,$,%,U,^,&,*,(,)
+"#include<iostream>
+using namespace std;
+
+int bubblesort(int arr[], int size){
+    for(int i=1;i<size;i++){
+        for(int j=0;j<size-i;j++){
+            if(arr[j]> arr[j+1]){
+                int temp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j]= temp;
+            }
+            else{
+                continue;
+            }
+        }
+    }
+}
+
+int main()
+{
+    int arr[]={7,11,9,2,17,4};
+    int size = sizeof(arr)/ sizeof(arr[0]);
+
+    cout<<""\n\nBEFORE SORTING\n"";
+    for(int i=0;i<size;i++){
+        cout<< arr[i]<<"" "";
+    }
+
+    bubblesort(arr,size);
+
+    cout<<""\n\nSORTED ARRAY IS \n"";
+    for(int i=0;i<size;i++){
+        cout<< arr[i]<<"" "";
+    }
+return 0;
+}           
+
+hope you like it"
+!,@,#,$,%,U,^,&,*,(,)
+Congress bhi 50 video apne or ma nee akset korlii complete ... Our bhout agee jane heh hum logo keee... let's go
+!,@,#,$,%,U,^,&,*,(,)
+"Basically by first pass you can check that if the array is sorted or not , you can create a sort function if the condition satisfies you can call the function and ignore next passes for 28 : 13"
+!,@,#,$,%,U,^,&,*,(,)
+"Which software harry is using for writing
+
+Anyone knows the name????"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much sir 😊❤️
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations for the half century Harry bhai
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations Harry!
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations on Half Century 🎉
+!,@,#,$,%,U,^,&,*,(,)
+Half Century I  watched oll video☺️☺️
+!,@,#,$,%,U,^,&,*,(,)
+Congratulations 🥳🥳🥳🥳🥳
+!,@,#,$,%,U,^,&,*,(,)
+Im not belong to c but I totally understand 👍❤️
+!,@,#,$,%,U,^,&,*,(,)
+Bhi app Math vi parao
+!,@,#,$,%,U,^,&,*,(,)
+hiii i l u
+!,@,#,$,%,U,^,&,*,(,)
+"#include<stdio.h>
+
+int main()
+{ int i,j,a[30],temp,n;
+  
+  printf(""ENTER SIZE THE ARRAY:\n"");
+  scanf(""%d"",&n);
+  
+  printf(""ENTER THE ELEMENTS TO BE SORTED IN THE ARRAY: "");
+  for(i=0;i<n;i++)
+  {scanf(""%d"",&a[i]);
+  }
+  
+  for(i=0;i<n-1;i++)
+  {
+      for(j=0;j<n-1-i;j++)
+      { if(a[j]>a[j+1])
+           temp=a[j];
+           a[j]=a[j+1];
+           a[j+1]=temp;
+      }
+      
+      
+  }
+  printf(""AFTER SORTING THE ELEMENTS ARE:\n"");
+  for(i=0;i<n;i++)
+    printf(""%d\t"",a[i]);
+    
+}"
+!,@,#,$,%,U,^,&,*,(,)
+Well understood ma'am
+!,@,#,$,%,U,^,&,*,(,)
+"Ma'am please add 2 Pointers Technique, Sliding Window Technique, and Object Key value Pairs. it would be much helpful."
+!,@,#,$,%,U,^,&,*,(,)
+Wow mam that thing with flag that was awesome
+!,@,#,$,%,U,^,&,*,(,)
+Can you please recreate all the data structure playlist with your new camera. You are helping a lot
+!,@,#,$,%,U,^,&,*,(,)
+thanks ma'am kafi aaccha padhati ho app
+!,@,#,$,%,U,^,&,*,(,)
+You are a gem! Subscribed!
+!,@,#,$,%,U,^,&,*,(,)
+So beautifully explained ❤️
+!,@,#,$,%,U,^,&,*,(,)
+tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq  ssssssoooooooooooooooooo muchhhhhhhhhhhhhhhhhhhhhhhhh i am learning better by seeing your video
+!,@,#,$,%,U,^,&,*,(,)
+Mam looks like anjli Arora❣️😄
+!,@,#,$,%,U,^,&,*,(,)
+"No words to appreciate Ur teaching style and thorough understanding, great!"
+!,@,#,$,%,U,^,&,*,(,)
+Complete clear information contained video. Everyone deserves best teacher like you.❣️❣️
+!,@,#,$,%,U,^,&,*,(,)
+"Jenny, I enjoyed your explanation on Bubble sort. But could you explain what i++ stands for at 13:24 on the recording. I think it means just move on to the next iteration?"
+!,@,#,$,%,U,^,&,*,(,)
+You are so intelligent mentor and you are so beautiful as well
+!,@,#,$,%,U,^,&,*,(,)
+This is the best explantation ever. You made things so easy to understand that I have no words to appreciate. You are just Excellent..😊😊
+!,@,#,$,%,U,^,&,*,(,)
+"Hi mam, i am u r subscriber and i wish to tell one truth sentence.that is i think in the whole YouTube .no one can explain like this .this Is  stunning 😍 explanation by my Jenny 💕😍mam . Thank u mam for u r guidence for my great future 💗.i need u r blessings and supports ..and finally i can tell one thing .one fine day i will definitely 😁 meet you mam..love u mam bye👋"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much maam for teaching so efficiently
+!,@,#,$,%,U,^,&,*,(,)
+Ma'am me pharmacy ka student hun but apka video dekha tho dekh te hi gya smja tho kuch nahi par maja aaya
+!,@,#,$,%,U,^,&,*,(,)
+Amazing Video! Thank you ma'am!
+!,@,#,$,%,U,^,&,*,(,)
+"22:32
+ using Flag"
+!,@,#,$,%,U,^,&,*,(,)
+beneficial session ...now I can solve sorting problems very confidently....thank you so much jenny mam..!!!!!!
+!,@,#,$,%,U,^,&,*,(,)
+really cool explanation
+!,@,#,$,%,U,^,&,*,(,)
+"In actuality, Mam  you explain the algorithm very clear.. Now I'm  am able  to understand coding just because  of you Mam... Thanks for your great work..Thank you Mam..   👍👍"
+!,@,#,$,%,U,^,&,*,(,)
+"Others:what is the value?
+Ma'am:The value is whatt? 😂"
+!,@,#,$,%,U,^,&,*,(,)
+Love you Dear♥♥
+!,@,#,$,%,U,^,&,*,(,)
+Thank you mam ❣️
+!,@,#,$,%,U,^,&,*,(,)
+this lady is a talented teacher
+!,@,#,$,%,U,^,&,*,(,)
+great mam thx for hard work
+!,@,#,$,%,U,^,&,*,(,)
+Thank you 😊
+!,@,#,$,%,U,^,&,*,(,)
+thank you so much mam i am a cse student nd you cleared my doubt very well now i m able to write my exam
+!,@,#,$,%,U,^,&,*,(,)
+Your explanation is awesome mam 🥰.
+!,@,#,$,%,U,^,&,*,(,)
+Nice 👍
+!,@,#,$,%,U,^,&,*,(,)
+thanks for such good teaching you really clear my concept about bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+You’re a great teacher
+!,@,#,$,%,U,^,&,*,(,)
+You’re a great teacher
+!,@,#,$,%,U,^,&,*,(,)
+"Respected Madam. 
+Thanks to your superb lectures, which are so easy to understand [even for non-cs std.s], I am able to grasp the concepts of DSA and survive this rigorous course structure and truly like the Coding and enjoying coding after watching videos from your channel and other superb channel too.  First time, i crossed 400 lines of code and created a phonebook code in C. So, happy, and thankful to you and harry esp. I am thankful for your free course which is empowering young youths of India, and will definitely repay you, once I get placed. Hope so in MaaNGM.
+Thank you for making this world a better place and creating excellent videos. May God notice your all good deeds and shower blessings on you always. Tc. Stay safe. Keep Shining."
+!,@,#,$,%,U,^,&,*,(,)
+thank you so much mam....
+!,@,#,$,%,U,^,&,*,(,)
+Thanks thanks lot mama
+!,@,#,$,%,U,^,&,*,(,)
+"Best Explanation ever. Thank you madam, I'll always respect you.👏👏"
+!,@,#,$,%,U,^,&,*,(,)
+You are amazing!
+!,@,#,$,%,U,^,&,*,(,)
+Awesome explanation ma'am 👍
+!,@,#,$,%,U,^,&,*,(,)
+Many many thanks to you mam your lecture made me understand far better than my lecturer's class thank you mam
+!,@,#,$,%,U,^,&,*,(,)
+Ty ma'am for solving my problem
+!,@,#,$,%,U,^,&,*,(,)
+Superb!!! great video. Thank a lot.
+!,@,#,$,%,U,^,&,*,(,)
+"Jenny Ma'am, why these DSA's seems so easy when you teach then when the other teacher's teach. Thanks for the videos."
+!,@,#,$,%,U,^,&,*,(,)
+Thanks a lot ma'am
+!,@,#,$,%,U,^,&,*,(,)
+Awesome lecture 🔥🔥🔥 mam
+!,@,#,$,%,U,^,&,*,(,)
+"The better word for ""Pass"" here would be ""Sets"". For better and simpler understanding."
+!,@,#,$,%,U,^,&,*,(,)
+excellent explanation
+!,@,#,$,%,U,^,&,*,(,)
+"Actually I was not getting this topic from where I was learning before, therefore I started searching and watching videos for this but I didn't get untill I came here.
+I wish ,i could have started my journey from here .
+Thanks a lot mam.
+Lots of love 💕💕"
+!,@,#,$,%,U,^,&,*,(,)
+Excellent explanation madam..
+!,@,#,$,%,U,^,&,*,(,)
+maam you are real heroine .at last i understand sorting for your video.
+!,@,#,$,%,U,^,&,*,(,)
+"It is so much blessed that I can find Jenny's wonderful DSA videos on youtube!! Compared to another videos on Udemy or Youtube, Jenny explains every concept so thoroughly that I could understand data structure more easily. Thank you Jenny!"
+!,@,#,$,%,U,^,&,*,(,)
+Thank You Ma'am !
+!,@,#,$,%,U,^,&,*,(,)
+Thank you very very much mam 🙏🙇🙇🙇
+!,@,#,$,%,U,^,&,*,(,)
+"I  watch all  tutorials  related to my topics. you are good, not only good you are unique. but when you will start python????. if  you can please start soon. The course is so important in current era."
+!,@,#,$,%,U,^,&,*,(,)
+"I couldn't have understood why we write  i< n-1  or  j< n-1, or why we need 2 loops; and i searched a lot but wouldn't find an answer to understand basically. Thank God i found u and this precious video. You explained perfectly and I appreciate it <3"
+!,@,#,$,%,U,^,&,*,(,)
+Very clear mam tq
+!,@,#,$,%,U,^,&,*,(,)
+Your better then my lecturer
+!,@,#,$,%,U,^,&,*,(,)
+Saviour 👀♥️
+!,@,#,$,%,U,^,&,*,(,)
+Ma'am I am confused in if statement at the temp
+!,@,#,$,%,U,^,&,*,(,)
+What an explanation mam thank you very much mam. No one can explain the way you did.. 😃
+!,@,#,$,%,U,^,&,*,(,)
+"for(i=0,i<size_of_arr,i++)
+{
+for(j=i+1,j<size_of_arr,j++)
+{
+if(arr[i]>arr[j])
+{
+int temp=arr[i];
+arr[i]=arr[j];
+arr[j]=temp;
+}
+}
+}
+Does it still called bubble sort ?"
+!,@,#,$,%,U,^,&,*,(,)
+Thank u so much Jenny mam
+!,@,#,$,%,U,^,&,*,(,)
+Thankyouh miss
+!,@,#,$,%,U,^,&,*,(,)
+Excellent Teacher.. Thank you
+!,@,#,$,%,U,^,&,*,(,)
+"//Source Code
+
+#include<iostream>
+using namespace std;
+int main(){
+
+    int n;
+    cin>>n;
+    int arr[n];
+
+    //Input from user
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    //Bubble Sort Algorithm
+    for(int i=0;i<n-1;i++){
+        bool flag=0;
+        for(int j=0;j<n-1-i;j++){
+            if(arr[j]>arr[j+1]){
+                swap(arr[j],arr[j+1]);
+                flag=1;
+            }
+        }
+        if(flag==0){
+            break;
+        }
+    }
+
+    //Printing the sort values
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<"" "";
+    }
+    cout<<endl;
+
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+Amazing explanation 👏👏👏
+!,@,#,$,%,U,^,&,*,(,)
+3 different instructors before her and I couldn't fully grasp bubble sort. She nailed it. And she's pretty too...... I think I'm in love.
+!,@,#,$,%,U,^,&,*,(,)
+Mam in pass 2 why would you compare 15 with 16. 16 is already sorted in pass 1
+!,@,#,$,%,U,^,&,*,(,)
+try for 2 3 4 6 5
+!,@,#,$,%,U,^,&,*,(,)
+good mam
+!,@,#,$,%,U,^,&,*,(,)
+Kuch bhi samajh nhi atta
+!,@,#,$,%,U,^,&,*,(,)
+Oo mam g Hindi mai pdha loo kyu angrej bne hua hoo sabhi Kai sabhi 🥺
+!,@,#,$,%,U,^,&,*,(,)
+"Your experience of explaining any topic is very amazing ❤️
+You are the best teacher 🙂"
+!,@,#,$,%,U,^,&,*,(,)
+Mam could u make a video on fibnocci series mam most required one mam
+!,@,#,$,%,U,^,&,*,(,)
+Samjh me kuch nahi aaya bs aapko dekhne aaya tha 😍
+!,@,#,$,%,U,^,&,*,(,)
+"//Can someone help me by finding the mistake in the code i had written below PLEASEE
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for( int i=0 ; i<n ; i++ )
+    {
+        cin>>a[n];
+    }
+    for(int i=0 ; i<n-1 ; i++)
+    {
+        bool flag=0;
+        for (int j=0 ; j<(n-1)-i ; j++)
+        {
+            if(a[j]>a[j+1])
+            {
+                int temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+                flag=1;
+            }
+        }
+        if(flag==0)
+        {
+            break;
+        }
+    }
+    for(int i=0 ; i<n ; i++)
+    {
+        cout<<a[i]<<"" "";
+    }
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+2:16 angrez students watching this lecture.... Hold up... did she say fatna?
+!,@,#,$,%,U,^,&,*,(,)
+"Sir , please c++ one shot video  banaiye n sir"
+!,@,#,$,%,U,^,&,*,(,)
+can  the provide to me of notes
+!,@,#,$,%,U,^,&,*,(,)
+Sirr ...plzz programs pr b video bana lo ..or ds pora complete karoo. 😭
+!,@,#,$,%,U,^,&,*,(,)
+"#include<stdio.h>
+void bubblesort(int [],int);
+void main()
+{
+ int a[20],n,i;
+ clrscr();
+ printf(""Enter number of element to array"");
+ scanf(""%d"",&n);
+ printf(""\n Enter elements to array"");
+ for(i=0;i<n;i++)
+{
+scanf(""%d"",&a[i]);
+ }
+ bubblesort(a,n);
+ printf(""\n After sorting\n"");
+ for(i=0;i<n;i++)
+ {
+printf(""\t %d"",a[i]);
+ }
+ getch();
+}
+
+void bubblesort(int a[],int n)
+{
+ int i,j,t;
+ for(i=0;i<n;i++)
+ {
+ for(j=0;j<n-i-1;j++)
+ {
+if(a[j]>a[j+1])
+{
+ t=a[j];
+ a[j]=a[j+1];
+ a[j+1]=t;
+}
+ }
+ }
+}
+Output:
+Enter number of element to array 5
+Enter elements to array
+12 10 11 13 9
+After sorting
+ 9 10 11 12 13"
+!,@,#,$,%,U,^,&,*,(,)
+Bhai aap ke pas pdf nahi hai kya
+!,@,#,$,%,U,^,&,*,(,)
+Shell sort vi
+!,@,#,$,%,U,^,&,*,(,)
+Sir please iska program bhi.  Bata do please
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much sir ekdam asañise samja diya jo college me nhi samja payete idar aake clear hua thank you so much ❤️❤️❤️❤️❤️❤️❤️👍👍
+!,@,#,$,%,U,^,&,*,(,)
+Sir actually it always arrange the element in both ascending and descending order
+!,@,#,$,%,U,^,&,*,(,)
+Algorithm per program empliment karkay dijiya plz
+!,@,#,$,%,U,^,&,*,(,)
+Program bna dijiye
+!,@,#,$,%,U,^,&,*,(,)
+Is k program 🥲 v kr do
+!,@,#,$,%,U,^,&,*,(,)
+Sir please complete this course
+!,@,#,$,%,U,^,&,*,(,)
+Sir program plz
+!,@,#,$,%,U,^,&,*,(,)
+Please correct your pronunciation🙏
+!,@,#,$,%,U,^,&,*,(,)
+Sir please 🙏 aapne kis bhi algorithm pe program nahi banaya hai un algorithm pe ek program bana dete to thoda aur samajhne me aasani hoti
+!,@,#,$,%,U,^,&,*,(,)
+Bubble sort arranges data in ascending order not in descending. kindly correct it rather than misleading your viewers.
+!,@,#,$,%,U,^,&,*,(,)
+"Sir please show this program in dev c or turbo plz .
+By the way awesome explanation ❤️"
+!,@,#,$,%,U,^,&,*,(,)
+Bhai ispe program bnake explain krdo..
+!,@,#,$,%,U,^,&,*,(,)
+https://youtu.be/f3wbivCVbF0
+!,@,#,$,%,U,^,&,*,(,)
+Nice🔥👍
+!,@,#,$,%,U,^,&,*,(,)
+Wah kya samjaya yr mja aa gya itni khusi mujhe Aj tak nhi huii☺ thanku sir you are great  🔱
+!,@,#,$,%,U,^,&,*,(,)
+Woh sir very good explanation 👍🥰🥰🥰👍
+!,@,#,$,%,U,^,&,*,(,)
+Once explain it in for loop
+!,@,#,$,%,U,^,&,*,(,)
+Sir program also..
+!,@,#,$,%,U,^,&,*,(,)
+Sir program implement kra dijiye iska
+!,@,#,$,%,U,^,&,*,(,)
+Sir please sir isko samjhao
+!,@,#,$,%,U,^,&,*,(,)
+"*correction* 
+Ascending order (from small to big)"
+!,@,#,$,%,U,^,&,*,(,)
+Plz make series in single video on Data structure using 'c'..
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much sir❤️🙏🙏
+!,@,#,$,%,U,^,&,*,(,)
+Sir thoda aur Chhota likha kriye 🥲
+!,@,#,$,%,U,^,&,*,(,)
+"Ascending order or descending🤔🤔
+I think ascending order is right."
+!,@,#,$,%,U,^,&,*,(,)
+Sir please program bna dijiye
+!,@,#,$,%,U,^,&,*,(,)
+Good explanation sir ji 🙏
+!,@,#,$,%,U,^,&,*,(,)
+Thankyou sir it helps a lot
+!,@,#,$,%,U,^,&,*,(,)
+brother aapke hand written Notes milenge kya? mujhe exam purpose ke liye chahiye the
+!,@,#,$,%,U,^,&,*,(,)
+Osm tech sir🤗🤗
+!,@,#,$,%,U,^,&,*,(,)
+Sir plz up board high school ke liye important question bata dijiye
+!,@,#,$,%,U,^,&,*,(,)
+"sayad youtube pr apse achi viedo en subject ki kisi ki nhi hai thanku sir ap bhut acha samjhate hai and bhut students ko fayda hota apki viedo ka, again thanku very much sir."
+!,@,#,$,%,U,^,&,*,(,)
+Great understanding 👍 I appreciate your understanding way
+!,@,#,$,%,U,^,&,*,(,)
+Hats off to you sir
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks sir
+🙏🙏
+😊"
+!,@,#,$,%,U,^,&,*,(,)
+Sir four stapes phir se jra dekhiye kya shi h
+!,@,#,$,%,U,^,&,*,(,)
+Excellent sir
+!,@,#,$,%,U,^,&,*,(,)
+Sir iska program de dijiye
+!,@,#,$,%,U,^,&,*,(,)
+Sir can u plz 🙏 send the program of this code
+!,@,#,$,%,U,^,&,*,(,)
+you are awsome can you pls share pdfs of your notes pls....
+!,@,#,$,%,U,^,&,*,(,)
+sir notes chaya ha
+!,@,#,$,%,U,^,&,*,(,)
+Sir please provide  bubble sort program
+!,@,#,$,%,U,^,&,*,(,)
+Program sikhao pls
+!,@,#,$,%,U,^,&,*,(,)
+sir iska program bhi dijiye
+!,@,#,$,%,U,^,&,*,(,)
+Can We Implement With The For loop and if also.
+!,@,#,$,%,U,^,&,*,(,)
+Why step 3 : i <- 3?
+!,@,#,$,%,U,^,&,*,(,)
+You could have made a program for bubble sort.😣
+!,@,#,$,%,U,^,&,*,(,)
+I think it arranges the data in increasing order not in decreasing order
+!,@,#,$,%,U,^,&,*,(,)
+"I wish to continue ur videos as series but you didn't make the videos on merge, heap, radix, shell, tree and bucket. Plz drop the video on these ic possible 👍🏻👍🏻"
+!,@,#,$,%,U,^,&,*,(,)
+insect disturbing😁
+!,@,#,$,%,U,^,&,*,(,)
+Sir kimdly make the program
+!,@,#,$,%,U,^,&,*,(,)
+Yes sir program bana dijiyega is pr please... 🙏
+!,@,#,$,%,U,^,&,*,(,)
+Sir bubble sort ka program implement kijiye
+!,@,#,$,%,U,^,&,*,(,)
+Sir ye nots de do PLZZ🙏
+!,@,#,$,%,U,^,&,*,(,)
+Make your notes pdf for students👩‍🎓👩‍🎓
+!,@,#,$,%,U,^,&,*,(,)
+Please upload the related example program
+!,@,#,$,%,U,^,&,*,(,)
+love you yrr kya explain kiya hai
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir ...
+!,@,#,$,%,U,^,&,*,(,)
+Nice sir 👌
+!,@,#,$,%,U,^,&,*,(,)
+Nice
+!,@,#,$,%,U,^,&,*,(,)
+Nice method
+!,@,#,$,%,U,^,&,*,(,)
+Thanks
+!,@,#,$,%,U,^,&,*,(,)
+Is there any difference between bubble shot in cand bubble shot in data types
+!,@,#,$,%,U,^,&,*,(,)
+"bhai taarif ke liye shabd khatam 
+time nhi hai fir bhi comment kar rha hu 
+
+love you bro"
+!,@,#,$,%,U,^,&,*,(,)
+Bahi insta I'd ha Teri kuch bat Karna tha
+!,@,#,$,%,U,^,&,*,(,)
+Nice bahi
+!,@,#,$,%,U,^,&,*,(,)
+toba bohat payara samjaya........thankuuuuuuuuuuuuuuuuuuuuuuuuuuu
+!,@,#,$,%,U,^,&,*,(,)
+This algorithm is same for another example?
+!,@,#,$,%,U,^,&,*,(,)
+Sir yeh lower se upper me kyu print hoge...jbki decending order h
+!,@,#,$,%,U,^,&,*,(,)
+plz also provide some previous year questions from various universities
+!,@,#,$,%,U,^,&,*,(,)
+Sir plz program bana dijiye as soon as possible
+!,@,#,$,%,U,^,&,*,(,)
+bna dou sir program aapko kitta time lagega
+!,@,#,$,%,U,^,&,*,(,)
+Sir please🙏🏻 program bhi bata do na 🥺🥺
+!,@,#,$,%,U,^,&,*,(,)
+"totally bakwas bro time waste you waste my 15 mins (apna college, code beauty ) is better then you 😡😡😡"
+!,@,#,$,%,U,^,&,*,(,)
+"29th November,2022"
+!,@,#,$,%,U,^,&,*,(,)
+"Sir one small confusion I have... Why have you used void function (8:30 viod swap...) because it won't return any value??? It should have been ""pass by reference"" if used with void??? I know I am missing some concepts here and that I am wrong..."
+!,@,#,$,%,U,^,&,*,(,)
+The explanation is very nice!
+!,@,#,$,%,U,^,&,*,(,)
+"bhaiya,
+1st For-loop ma (i<n-1) //5-1 = 4, but (i<4 = 3) hota hai.
+why shouldn't it be (i<= n-1) ? //5-1 = 4. for 4 elements.
+why did u loop for just 1st 3 elements."
+!,@,#,$,%,U,^,&,*,(,)
+"Utter shame that despite of 72k people watched this video, barely 2.5k people liked this. This guys deserves much more than this. People abusing others, girls showing their bodies on youtube get millions views and likes on youtube, but people like him teaching are not getting the same. This is so unfortunate."
+!,@,#,$,%,U,^,&,*,(,)
+21/08/2022
+!,@,#,$,%,U,^,&,*,(,)
+Woh bhaiya very good explanation 👍👍👍
+!,@,#,$,%,U,^,&,*,(,)
+anuj uncle it would be great if you give daily assignments in dsa in youtube channel
+!,@,#,$,%,U,^,&,*,(,)
+Guddu bhaiya teaching bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+"easy way explain 👌
+Thank you ❤️😊 bhaiya"
+!,@,#,$,%,U,^,&,*,(,)
+something wrong in main function of swapping..plz check bhaiya g
+!,@,#,$,%,U,^,&,*,(,)
+j loop needs to run till j < (n - i - 2) only instead of j <  (n - i - 1). Great Video!
+!,@,#,$,%,U,^,&,*,(,)
+I think we will not get any better explanation than this in our mother tongue!
+!,@,#,$,%,U,^,&,*,(,)
+best lecture of sorting 😃
+!,@,#,$,%,U,^,&,*,(,)
+good explanation
+!,@,#,$,%,U,^,&,*,(,)
+"bhai u do one thing use paint  for explanation and use replit,oj,leet,hackerrank etc for coding explanation"
+!,@,#,$,%,U,^,&,*,(,)
+Great explanation. Optimization was cherry on the cake
+!,@,#,$,%,U,^,&,*,(,)
+Very helpful video ♥️
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya, I think first loop mein instead of "" i<n-1"" it'll be just ""i<n"" ..."
+!,@,#,$,%,U,^,&,*,(,)
+Why there is   i < n-1.. Can anyone explain..??
+!,@,#,$,%,U,^,&,*,(,)
+"Following are the Time and Space complexity for the Bubble Sort algorithm.
+
+Worst Case Time Complexity [ Big-O ]: O(n2)
+Best Case Time Complexity [Big-omega]: O(n)
+Average Time Complexity [Big-theta]: O(n2)
+Space Complexity: O(1)"
+!,@,#,$,%,U,^,&,*,(,)
+Ya puja wala ad
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks a lot Anuj Bhhaiya 
+You helped us a lot"
+!,@,#,$,%,U,^,&,*,(,)
+Great. 👍
+!,@,#,$,%,U,^,&,*,(,)
+Please say in English. Everyone can understand
+!,@,#,$,%,U,^,&,*,(,)
+Sir is video me hum loop ko sirf ek bar run karke and uske andar if ka condition lagakar swap bhi kar sakte hai na ? and uski time complexity bhi kam hogi . To fir aapne ye method kyu use kiye ?
+!,@,#,$,%,U,^,&,*,(,)
+gold.. just gold...
+!,@,#,$,%,U,^,&,*,(,)
+Bubble sort done ✅
+!,@,#,$,%,U,^,&,*,(,)
+Thanks!
+!,@,#,$,%,U,^,&,*,(,)
+I love learning concept on white board so this is best
+!,@,#,$,%,U,^,&,*,(,)
+All doubts clear. thanks anuj bhaiya 🎇👍
+!,@,#,$,%,U,^,&,*,(,)
+Best course sir
+!,@,#,$,%,U,^,&,*,(,)
+❤️❤️❤️😭😭
+!,@,#,$,%,U,^,&,*,(,)
+"i remember bubble sort as bubble the biggest number to the last position 
+selection sort as select the smallest number and place it in the start"
+!,@,#,$,%,U,^,&,*,(,)
+J+1 ku kiya🙄
+!,@,#,$,%,U,^,&,*,(,)
+Thanks👍
+!,@,#,$,%,U,^,&,*,(,)
+"liked, commented ! now will learn sorting again, no care that i know it"
+!,@,#,$,%,U,^,&,*,(,)
+"meanwhile me thinking:
+Anuj bhaiya nahi hote toh, momos bej raha hota"
+!,@,#,$,%,U,^,&,*,(,)
+"bhaiya corona ne patla kar diya aapko.... pehle sahi dikhte the... aap seh inspire hua tha body banane keh liye....
+
+kuch khaya piya karo yaar, love u a lot!"
+!,@,#,$,%,U,^,&,*,(,)
+"hello bhaiyya, 
+i have one doubt 
+index of array is start from 0 
+you took n =5.   0,1,2,3,4"
+!,@,#,$,%,U,^,&,*,(,)
+Why outer loop till n-2
+!,@,#,$,%,U,^,&,*,(,)
+nice explanation
+!,@,#,$,%,U,^,&,*,(,)
+Really good explanation
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much Brother ❤️ You are such a great teacher !!
+!,@,#,$,%,U,^,&,*,(,)
+Ye ascending-descending to hum  class -2 me hi Sikh get thew....
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya space kya hota hai ek dedicated video banao
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya please make a dedicated video on ""How to get a Android Developer job as a fresher at a good company/startup."" And what exact Android topics we should prepare for interviews ? Much needed."
+!,@,#,$,%,U,^,&,*,(,)
+"But Biceps grew from
+O(N) to O(N square) !"
+!,@,#,$,%,U,^,&,*,(,)
+gfg pe hai code😜
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya I know all of this as I am in class 10 ICSE.. 
+
+Please tell the importance of all these in future.. 
+Please🙏🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+"Already know sorting, please solve more leetcode problem, now-a-days even service based companies give questions from leetcode😅"
+!,@,#,$,%,U,^,&,*,(,)
+Time complexity?
+!,@,#,$,%,U,^,&,*,(,)
+Sir ap hme...2-3 questions de dijiya kre...for practice...
+!,@,#,$,%,U,^,&,*,(,)
+Love you bhaiya...jldi jldi se complete kr dijiye
+!,@,#,$,%,U,^,&,*,(,)
+I already know sorting. Just came here to like the video😍
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya please continue the Android Development Series. It was very good series.
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya apne comment dekha PR reply ni kiye dosro ko like kiye but mera reply to kr dete mera future ka sawal h
+!,@,#,$,%,U,^,&,*,(,)
+Pls do in English broo
+!,@,#,$,%,U,^,&,*,(,)
+Anuj bhaiya is web development is necessary for SDE 1 job or dsa is enough?
+!,@,#,$,%,U,^,&,*,(,)
+Very well explained..!!👍
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya apne kon si programming language ki Jo app amazon me kam kr pa rahe ho ajj pls tell me
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks Anuj bhai but video bhut late  aa rhi hai.
+Btw your method of explanation is awesome"
+!,@,#,$,%,U,^,&,*,(,)
+"Bhaiya bass aap issi tarah iss course ko complete kar dijiye.
+Guys sirf like karne se kuch nhi hoga iss video ko share karo.🔥🔥"
+!,@,#,$,%,U,^,&,*,(,)
+To Be Honest You Are Doing Very Well Keep Doing
+!,@,#,$,%,U,^,&,*,(,)
+Amazing bhaiya 😍
+!,@,#,$,%,U,^,&,*,(,)
+Aapki videos se kaafi concept aasani se samajh aa jaate h. Thank u bhaiya for DSAOne
+!,@,#,$,%,U,^,&,*,(,)
+"Mai First hu...... Bas baki mai nahi janta... 
+
+Kyu Anuj bhaiya😜😜"
+!,@,#,$,%,U,^,&,*,(,)
+Description main link to code different program ka code h pls rectify it
+!,@,#,$,%,U,^,&,*,(,)
+You are best bhaiya ❤️
+!,@,#,$,%,U,^,&,*,(,)
+Cool goa vlog
+!,@,#,$,%,U,^,&,*,(,)
+First comment
+!,@,#,$,%,U,^,&,*,(,)
+Bht sai time pe video laye aap bhaiya.. thank you so much😍😍😌❤️
+!,@,#,$,%,U,^,&,*,(,)
+Bhaiya reply kero plz
+!,@,#,$,%,U,^,&,*,(,)
+First Comment
+!,@,#,$,%,U,^,&,*,(,)
+Great sir 👍
+!,@,#,$,%,U,^,&,*,(,)
+Superb explanation sir
+!,@,#,$,%,U,^,&,*,(,)
+mentor of all mentors
+!,@,#,$,%,U,^,&,*,(,)
+Aap nai 2 ko to swap hi nahi Kiya last mai
+!,@,#,$,%,U,^,&,*,(,)
+Sir we have to write steps in sentence beacuase we known the steps but the paper checker don't no about that my teacher tells me like these what is your opinion about this
+!,@,#,$,%,U,^,&,*,(,)
+boht aCHA SMJAYA HY APNY
+!,@,#,$,%,U,^,&,*,(,)
+Hello sir anyone choose kar sakte hai
+!,@,#,$,%,U,^,&,*,(,)
+completed
+!,@,#,$,%,U,^,&,*,(,)
+69
+!,@,#,$,%,U,^,&,*,(,)
+Thank you
+!,@,#,$,%,U,^,&,*,(,)
+Sir how to optimise bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+Amazing sirji
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much sir
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much 💞
+!,@,#,$,%,U,^,&,*,(,)
+🤩
+!,@,#,$,%,U,^,&,*,(,)
+thank you
+!,@,#,$,%,U,^,&,*,(,)
+"U r great. ..
+Aapke concept. As it is computer instructer me aaye the m apko bhut phle se follow krri hu 
+Or ab bhi last me apki video bdi helpfull rhi  DSA k apke video me wo tha jo kisi b coching me ni tha ..
+Thnkuu. Sir thanku again"
+!,@,#,$,%,U,^,&,*,(,)
+Great Teacher 👌love from Pakistan 🇵🇰
+!,@,#,$,%,U,^,&,*,(,)
+I need to prepare for ppsc exam for which i have to prepare data structure but unfortunately it is not complete + Not prepared by Varyn Singla so I have to search for any other tutor on YT but I came back to this channel❤️ Love from Pakistan 🇵🇰
+!,@,#,$,%,U,^,&,*,(,)
+Jesy ye bnda smjhata hai naa esy kisi r ki smjh ni ati r nah lgta kisi aur ka authemtic 👌
+!,@,#,$,%,U,^,&,*,(,)
+Bhai love from pak♥️. I have my exam tomorrow and I'm watching your videos cuz they are really helpful ❤️
+!,@,#,$,%,U,^,&,*,(,)
+"Sir, you are reason i got my first job .Thank you so much Sir. Before i got placed i studied from you and after also during training i am studying from you.Best Teacher."
+!,@,#,$,%,U,^,&,*,(,)
+Natural number ka formula galat bataye
+!,@,#,$,%,U,^,&,*,(,)
+Thank You
+!,@,#,$,%,U,^,&,*,(,)
+👍
+!,@,#,$,%,U,^,&,*,(,)
+Done
+!,@,#,$,%,U,^,&,*,(,)
+You are the best sir thank you for making wonderful videos
+!,@,#,$,%,U,^,&,*,(,)
+Great
+!,@,#,$,%,U,^,&,*,(,)
+Sir kindly ye in jaise logon k comments delete kr diya kryn
+!,@,#,$,%,U,^,&,*,(,)
+from pakistan....thank u sooo much sir hmra smster to ap k sahry e chlta ha❤ALLAH bless u all the time💕
+!,@,#,$,%,U,^,&,*,(,)
+😇😇😇😇
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir ❤️
+!,@,#,$,%,U,^,&,*,(,)
+❤️❤️❤️
+!,@,#,$,%,U,^,&,*,(,)
+Sir uplode video  for all shorting  methods in one video
+!,@,#,$,%,U,^,&,*,(,)
+aslamoalikum. bhai plz is ki book btyaen mcqs concept clear karny  ka lia
+!,@,#,$,%,U,^,&,*,(,)
+thanks.
+!,@,#,$,%,U,^,&,*,(,)
+Thanku so much
+!,@,#,$,%,U,^,&,*,(,)
+Thanku so much
+!,@,#,$,%,U,^,&,*,(,)
+"hello good evening sir "" sir plz make a video computer networking"
+!,@,#,$,%,U,^,&,*,(,)
+Pseudo code ni ha bubble sort ka please share kr den😞
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir
+!,@,#,$,%,U,^,&,*,(,)
+Asslam.o.alikum you r the best teacher thank U
+!,@,#,$,%,U,^,&,*,(,)
+"This was  really very helpful for me to understand the concepts of bubble sorting
+
+Thanks a bunch Sir !!!"
+!,@,#,$,%,U,^,&,*,(,)
+❤
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir for this wonderful playlist
+!,@,#,$,%,U,^,&,*,(,)
+"New logic few more programs to do so that is the knew.
+/*"
+!,@,#,$,%,U,^,&,*,(,)
+The total no of swaps is not the same as the total no of comparison
+!,@,#,$,%,U,^,&,*,(,)
+"Amazing sir, Thank you ❤️"
+!,@,#,$,%,U,^,&,*,(,)
+what is n scare?
+!,@,#,$,%,U,^,&,*,(,)
+if we have same number of elements in an array ho can we solve.for example 7 4 1 6 3 4 2 .
+!,@,#,$,%,U,^,&,*,(,)
+how to take cost complexity of this algo ?
+!,@,#,$,%,U,^,&,*,(,)
+Love from Bangladesh.
+!,@,#,$,%,U,^,&,*,(,)
+what is used of two for loop in bubble sort fully explained
+!,@,#,$,%,U,^,&,*,(,)
+why nested for loop used in bubble sort see my video with fully explained.
+!,@,#,$,%,U,^,&,*,(,)
+https://youtu.be/EsTPwEI8cvs
+!,@,#,$,%,U,^,&,*,(,)
+Most helpful! ❤️
+!,@,#,$,%,U,^,&,*,(,)
+"The given array is arr = {1,2,4,3}. Bubble sort is used to sort the array elements. How many iterations will be done to sort the array?
+***How the answer comes out to be 4.*** 
+Detailed explanation would be appreciated."
+!,@,#,$,%,U,^,&,*,(,)
+"Sir bubble sort (1,2,4,3) me no of iteration and swapping kitna hai"
+!,@,#,$,%,U,^,&,*,(,)
+Great👍
+!,@,#,$,%,U,^,&,*,(,)
+❤️❤️
+!,@,#,$,%,U,^,&,*,(,)
+Why am i paying 50k to my clg? Why dont they teach like this
+!,@,#,$,%,U,^,&,*,(,)
+"Can anyone pls tell 
+Do we need to count no of swappings or comparisons to find time complexity?"
+!,@,#,$,%,U,^,&,*,(,)
+"Hello brother, you teach soo well, and you have such a nice personality that I wish you were my brother. 
+Lots of love and respect, wish you great success in your life."
+!,@,#,$,%,U,^,&,*,(,)
+"Anwar from Sialkot Pakistan. U r the best teacher in the world.... I really appreciate ur all efforts, ur unique teaching technique... Thank u so much sir for ur priceless contribution.... I really shocked that how someone is amazing like this❤️❤️❤️❤️🤟"
+!,@,#,$,%,U,^,&,*,(,)
+"Your Lectures are indeed very absorbing, Keep up the good work Bhai 💖"
+!,@,#,$,%,U,^,&,*,(,)
+"Loving your lectures, God Bless You 💖"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir. It's very helpful😁
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much Sir
+!,@,#,$,%,U,^,&,*,(,)
+Thank you Sir for the well explanation
+!,@,#,$,%,U,^,&,*,(,)
+Helpful tutorial
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir for this amazing explanation
+!,@,#,$,%,U,^,&,*,(,)
+Great
+!,@,#,$,%,U,^,&,*,(,)
+"Sir, you are awesome ❤️❤️"
+!,@,#,$,%,U,^,&,*,(,)
+New subscriber🥰  u makes us undrstand so well🤩🙏 thnkew sir
+!,@,#,$,%,U,^,&,*,(,)
+Thank you for this amazing explanation 🙏🙏
+!,@,#,$,%,U,^,&,*,(,)
+Awesome ❤👌❤
+!,@,#,$,%,U,^,&,*,(,)
+Kya teaching style h 👌👌👌👌
+!,@,#,$,%,U,^,&,*,(,)
+Very nice explaination sir jii 🙏
+!,@,#,$,%,U,^,&,*,(,)
+Sir kya ye videos sufficient hain daa m ugc net k liye
+!,@,#,$,%,U,^,&,*,(,)
+You are the best sir. Your teaching method really best..
+!,@,#,$,%,U,^,&,*,(,)
+"Thankyou from saving me from watching 1 hour lecture, when I am in rush before exams"
+!,@,#,$,%,U,^,&,*,(,)
+This animation absolutely made me understand the bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+Great explanation!
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you so much, very helpful!"
+!,@,#,$,%,U,^,&,*,(,)
+Awesome simple and straight to the point - subscribed!
+!,@,#,$,%,U,^,&,*,(,)
+"im confused how you go from 1 to n and then from 0 to n-1. The smallest index in the array is 0, and the largest index in the array is n-1, right? so how can you go from index 1 to index n when index n does not exist?"
+!,@,#,$,%,U,^,&,*,(,)
+hate these 2 min bs videos just lazy
+!,@,#,$,%,U,^,&,*,(,)
+Thanks sir 😁
+!,@,#,$,%,U,^,&,*,(,)
+Thanks
+!,@,#,$,%,U,^,&,*,(,)
+"Bubble sort in 10 seconds: don't use it. just don't, it's bad. Learn a better one. Learn insertion sort, or heck, even some of the fast ones!"
+!,@,#,$,%,U,^,&,*,(,)
+BROOO THANKS A LOT
+!,@,#,$,%,U,^,&,*,(,)
+I know how to do the problem but I don't know how to tell the computer how long I want this process to continue. Do you have any suggestion of books to read or watch?
+!,@,#,$,%,U,^,&,*,(,)
+"I found another video that teach bubble sort too.and both of the videos are great！
+https://youtu.be/T6NCkw-3l2Q"
+!,@,#,$,%,U,^,&,*,(,)
+With this pseudocode I doubt you understand the bubble sort completely...
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much
+!,@,#,$,%,U,^,&,*,(,)
+humans hav voice for reason : nice work
+!,@,#,$,%,U,^,&,*,(,)
+that was actually two minutes and nine seconds. Not cool.
+!,@,#,$,%,U,^,&,*,(,)
+Best algo channel on youtube.
+!,@,#,$,%,U,^,&,*,(,)
+"you saved me, thanks a lot man"
+!,@,#,$,%,U,^,&,*,(,)
+thanks
+!,@,#,$,%,U,^,&,*,(,)
+what does out of place mean ????
+!,@,#,$,%,U,^,&,*,(,)
+what does it mean for j from 0 to N -1
+!,@,#,$,%,U,^,&,*,(,)
+Real Gem 💎
+!,@,#,$,%,U,^,&,*,(,)
+All your sort videos were awesome!!! Thank you so much bc I needed it for my final tmw lol
+!,@,#,$,%,U,^,&,*,(,)
+Great video! Thank you so much.
+!,@,#,$,%,U,^,&,*,(,)
+now THIS is the best bubble sort guide ever
+!,@,#,$,%,U,^,&,*,(,)
+"very good, thank you❤️👍"
+!,@,#,$,%,U,^,&,*,(,)
+2x and 1 minute. ez.
+!,@,#,$,%,U,^,&,*,(,)
+"is it me or this is probably the slowest sorting algo?
+thanks for a more clear explanation"
+!,@,#,$,%,U,^,&,*,(,)
+"i like these short vids
+to the point and no padding like those other shitty ass vids
+thank you kind sir"
+!,@,#,$,%,U,^,&,*,(,)
+"That code is not for bubbleSort, bubbleSort guarantees to have a time complexity of O(kn) with k the number of elements missplaced, the code is not correct."
+!,@,#,$,%,U,^,&,*,(,)
+Bruh is this really what took my professor most of the class trying to explain😭 thank you so much for this
+!,@,#,$,%,U,^,&,*,(,)
+"I know what to do with this, I'm just looking at videos of it because writing the damn thing out in my Further Maths Decision book is a long process."
+!,@,#,$,%,U,^,&,*,(,)
+i have a question
+!,@,#,$,%,U,^,&,*,(,)
+Please
+!,@,#,$,%,U,^,&,*,(,)
+Please  tell us about  Sorting of 2
+!,@,#,$,%,U,^,&,*,(,)
+What is sorting of 2
+!,@,#,$,%,U,^,&,*,(,)
+His two minutes of silent teaching was better than an hour of our lecturer's class.
+!,@,#,$,%,U,^,&,*,(,)
+Best video on bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+"So bubble sort is a bit like the opposite of selection sort, isn't it? Since with selection sort, you have a sorted partition on the left at any given iteration, and with bubble sort you have a sorted partition on the right at any given iteration."
+!,@,#,$,%,U,^,&,*,(,)
+JAAAAAAAAAAAAA but parallelized uu ;C
+!,@,#,$,%,U,^,&,*,(,)
+"Subscribed, thanks!"
+!,@,#,$,%,U,^,&,*,(,)
+"Best video I've seen to explain bubble sort, thank you!"
+!,@,#,$,%,U,^,&,*,(,)
+"From @interviewkickstart I learned that, 
+Its start comparison from right to left.
+So second for loop,
+
+For j from N to i
+
+Everything looks similar but here heavy element sorted at right. And Interviewkickstart video , in every steps lighter elements sorted at left"
+!,@,#,$,%,U,^,&,*,(,)
+Nice video! Helpped I lot to teach this
+!,@,#,$,%,U,^,&,*,(,)
+Guys is N-1 not N-i just saying its the last value not the array size a[i]
+!,@,#,$,%,U,^,&,*,(,)
+"I think second for loop is wrong, it must be from 0 to N - i"
+!,@,#,$,%,U,^,&,*,(,)
+hey man where can i text u ??
+!,@,#,$,%,U,^,&,*,(,)
+"the pseudocode for algorithm is WRONG. second for should be ""for j from 0 to N - i - 1"""
+!,@,#,$,%,U,^,&,*,(,)
+thanks
+!,@,#,$,%,U,^,&,*,(,)
+"Michael ""Simple"""
+!,@,#,$,%,U,^,&,*,(,)
+What is i and j
+!,@,#,$,%,U,^,&,*,(,)
+"for an strange reason, running this pseudocode in python has a bug, I don't know why, but comparing 2 elements of the list, for example: 4>23, returns TRUE, because. it seems to be comparing only the first digit (4>2), I solved it by converting the current value and the next value to integer before comparing, does anyone know why this happens?"
+!,@,#,$,%,U,^,&,*,(,)
+This channel is underrated man!
+!,@,#,$,%,U,^,&,*,(,)
+"If you want to learn bubble sort in 1 minute, simply 2x the speed of this video and thank me later."
+!,@,#,$,%,U,^,&,*,(,)
+great great great
+!,@,#,$,%,U,^,&,*,(,)
+"public static int[] sortBubble(int[] list) {
+		int temp;
+		for (int x = 0; x < list.length; x++) {
+			
+			for (int y = 0; y < list.length - 1; y++) {
+				
+				if (list[y] > list[y + 1]) {
+					temp = list[y];
+					list[y] = list[y + 1];
+					list[y + 1] = temp;
+				}
+			}
+		}
+		return list;
+	}
+
+for java users"
+!,@,#,$,%,U,^,&,*,(,)
+After completing a 30 minutes lecture on the topic this video is like a dessert after dinner.
+!,@,#,$,%,U,^,&,*,(,)
+very poggers video
+!,@,#,$,%,U,^,&,*,(,)
+I dont have questions
+!,@,#,$,%,U,^,&,*,(,)
+"Here us the most efficient buuble sort I know
+
+private void bubbleSort(int[] list){
+        boolean needNextPass = true;
+        for(int k = 1 ; k < list.length && needNextPass; k++) {
+            needNextPass = false; //If we don't switch in next iteration, no need for more loops
+            for(int i = 0 ; i < list.length - k ; i++) {
+                if(list[i] > list[i+1]){
+                    int temp = list[i];
+                    list[i] = list[i+1];
+                    list[i+1] = temp;
+                    needNextPass = true; //We swtiched so at least one more loop is needed
+                }
+            }
+        }
+    }"
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks dude, this shorts videos are saving me for my algoritm exam! 
+Thanks!"
+!,@,#,$,%,U,^,&,*,(,)
+bogo sort is better
+!,@,#,$,%,U,^,&,*,(,)
+Simple and understandable
+!,@,#,$,%,U,^,&,*,(,)
+my teacher showed us this dumb ass dance thing and I was like WTF IS THIS GARBAGE. this is so much more helpful thank you. I actually get it now
+!,@,#,$,%,U,^,&,*,(,)
+The numbers were exchanging from left to right by arrenging in order like 453621=123456
+!,@,#,$,%,U,^,&,*,(,)
+#IISH 11CSHLIC The video helped me understand the process of bubble sorting and how the iteration works. It is a comparison of consecutive variables that gives the right form of number as the end result.
+!,@,#,$,%,U,^,&,*,(,)
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order and it arranges them in increasing order.#IISH 11CSHLIC
+!,@,#,$,%,U,^,&,*,(,)
+The bubble sort method is a nice and simple method of sorting an array. It however looks to be very time consuming and inefficient as it would have to run almost as many times as the size of the array and it would be highly inefficient with larger arrays. #IISH11CSHLIC
+!,@,#,$,%,U,^,&,*,(,)
+thanks
+!,@,#,$,%,U,^,&,*,(,)
+i sat watching the video paused for 20s coz he's so slow
+!,@,#,$,%,U,^,&,*,(,)
+Thanks man. Wish me luck for my test tomorrow
+!,@,#,$,%,U,^,&,*,(,)
+Just what I needed!
+!,@,#,$,%,U,^,&,*,(,)
+"Just for that, you get a like and a subscribe!"
+!,@,#,$,%,U,^,&,*,(,)
+hahahahhahahahahahahahhahahahahahahha nerds
+!,@,#,$,%,U,^,&,*,(,)
+"the video part helps me understand, but as a newbie and noob I couldnt get your code to work, i dont even know how to type it out correctly for my list, so if you could show it in some python notebook and some random list how your code work would be great..."
+!,@,#,$,%,U,^,&,*,(,)
+Nincompoop💪
+!,@,#,$,%,U,^,&,*,(,)
+"Thank u, didnt have time for big explanations"
+!,@,#,$,%,U,^,&,*,(,)
+Hit a like if it is amazing
+!,@,#,$,%,U,^,&,*,(,)
+"@michael, Thanks for the video, but shouldn't the second FOR loop be ""for j from 0 to N-2"". i.e till the second last element.
+Because if it reaches ""N-1"" i.e the last element then j+1 = N which will give out of bound error."
+!,@,#,$,%,U,^,&,*,(,)
+Mam English ....
+!,@,#,$,%,U,^,&,*,(,)
+Iska notes kaha pr hai
+!,@,#,$,%,U,^,&,*,(,)
+Tomorrow is my pre board exam of computer applications I am not prepared
+!,@,#,$,%,U,^,&,*,(,)
+Thank you shradha did really helped me to Crack interview.
+!,@,#,$,%,U,^,&,*,(,)
+"I am a class 11th student and I was a little confused these 3 sorting and I have my half yearly examination tomorrow.
+Now I have understood so thank you ma'am 🙏🙏
+Well I also invented my own way to sort an array 🤏😎✌️"
+!,@,#,$,%,U,^,&,*,(,)
+My monthly test is tomorrow a big thank you to you ma’am i was confused about bubble sort 🙂
+!,@,#,$,%,U,^,&,*,(,)
+Please try kijiye na binary sorting
+!,@,#,$,%,U,^,&,*,(,)
+Dii binary sorting
+!,@,#,$,%,U,^,&,*,(,)
+Pehli bar loop chlega to pehla element ro sort ho gya na
+!,@,#,$,%,U,^,&,*,(,)
+Bubble sort -2:05
+!,@,#,$,%,U,^,&,*,(,)
+"Why is this selection sort function not correct mam?
+static int[] selection(int[] arr) {
+		
+		for(int i=0;i<arr.length-1;i++) {
+			int sm = arr[i];
+			for(int j=i+1;j<arr.length;j++) {
+				if(sm>arr[j]) {
+					sm=arr[j];
+				}	
+			}
+			
+				int temp=0;
+				temp=sm;
+				sm=arr[i];
+				arr[i] = temp;
+			
+		}
+		
+		return arr;
+	}"
+!,@,#,$,%,U,^,&,*,(,)
+Very great explanation thank you so much for such as videos.
+!,@,#,$,%,U,^,&,*,(,)
+Is this topic important ?
+!,@,#,$,%,U,^,&,*,(,)
+"Tbh I don't understand the insertion sort code, I just love your videos but now I don't understand this one this video make me feel low and depressed so sorry for this type of comment and i want to plz plz it's humble request to u explain this sorting once again aur do this sort in more easy way."
+!,@,#,$,%,U,^,&,*,(,)
+Thank You So Much Mam and Aman Bhaiya
+!,@,#,$,%,U,^,&,*,(,)
+Kya C++ aur Java mein Sorting same method se hoti hai?
+!,@,#,$,%,U,^,&,*,(,)
+"no mam
+unable to get the logic n code for insertion
+can we skip that"
+!,@,#,$,%,U,^,&,*,(,)
+java me exception ara hai code chl nhi rha
+!,@,#,$,%,U,^,&,*,(,)
+Mam background music ki waja se or b achi smj aa rahi ha
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much madam for making my concepts clear
+!,@,#,$,%,U,^,&,*,(,)
+Hllw mam
+!,@,#,$,%,U,^,&,*,(,)
+Mujhe to 10 minute me smjh agya insertion sort 😃😃 notebook pe likh k try kro smjhne ka this is easy I am 16 year old if I can do you can toooooooo 🥰🔥😊 shraddha didi op
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you so much didi 
+Love from Sikkim 🧡"
+!,@,#,$,%,U,^,&,*,(,)
+Best
+!,@,#,$,%,U,^,&,*,(,)
+I am in ICSE Board class10th student and this sorting are coming in board exams.Thank you didi for this video.
+!,@,#,$,%,U,^,&,*,(,)
+this video has awesome sound quality.
+!,@,#,$,%,U,^,&,*,(,)
+"24:03 Sorry, but in this Selection Sort i guys the Outer Loop is running n-1 times and you said n times so Guys please you also do comment me that as that right or wrong because I am too confused about this...Thank You.....!!!"
+!,@,#,$,%,U,^,&,*,(,)
+great lecture😍
+!,@,#,$,%,U,^,&,*,(,)
+"public class insertionSort{
+    public static void printArray(int[] a){
+        for(int i:a){
+            System.out.print(i+"" "");
+        }
+    }
+    public static void main(String[] args){
+        int[] a={7,8,3,1,2,8,5,6};
+        int n=a.length;
+        for(int i=0;i<n-1;i++){
+            for(int j=i+1;j>0;j--){
+                if(a[j]<a[j-1]){
+                    int temp=a[j];
+                    a[j]=a[j-1];
+                    a[j-1]=temp;
+                }
+            }
+        }
+        printArray(a);
+
+    }
+}
+
+
+
+
+I WROTE THIS CODE FOR INSERTION SORT BUT NOW I AM CONFUSED IF THIS IS INSERTION SORT ITSELF OR ANY OTHER TYPE, CUZ IT GIVES PERFECT RESULT.....
+
+😂😂🥲🥲😭😭"
+!,@,#,$,%,U,^,&,*,(,)
+26:47 aap usse patak hi do koi baat nhi☺️
+!,@,#,$,%,U,^,&,*,(,)
+"//GO FOR SIMPLE APPROACH//
+
+public class InsertionSort {
+    public static void printArray(int arr[]){
+        for(int i = 0;i<arr.length; i++){
+            System.out.print(arr[i]+"" "");
+        }
+        System.out.println();
+    }
+
+
+    public static void main(String[] args) {
+        int arr[]  = {5,4,3,2,1};
+        for(int i =0;i<arr.length-1;i++){
+            for(int j =i+1;j>0;j--){
+                if(arr[j]<arr[j-1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+                }
+            }
+        }
+        printArray(arr);
+    }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+notes ka 4 page blank hei
+!,@,#,$,%,U,^,&,*,(,)
+focus more on coding not more on explanation
+!,@,#,$,%,U,^,&,*,(,)
+"the way you type is little bit fast and coding is not shown properly
+hope so improve next time"
+!,@,#,$,%,U,^,&,*,(,)
+I can't find previous homework answers!
+!,@,#,$,%,U,^,&,*,(,)
+"thanks for this lecture.
+I understood everything."
+!,@,#,$,%,U,^,&,*,(,)
+insertion sort is confusing
+!,@,#,$,%,U,^,&,*,(,)
+so so confusing !
+!,@,#,$,%,U,^,&,*,(,)
+really you are great.
+!,@,#,$,%,U,^,&,*,(,)
+didi you are literally op
+!,@,#,$,%,U,^,&,*,(,)
+Is this complete series with all datastructure and algorithm
+!,@,#,$,%,U,^,&,*,(,)
+"Bubble Sort - 2:05
+Selection   Sort - 16:04
+Insertion Sort - 25:26"
+!,@,#,$,%,U,^,&,*,(,)
+what isthe application used here to write the code... iam in cls 11 and i use only blueJ...so if anyone can tell please....
+!,@,#,$,%,U,^,&,*,(,)
+"Thank You, Ma'am, this proved to be very helpful. You explained it so well that now my concepts are crystal clear and I am fully geared up for my board exam 2023."
+!,@,#,$,%,U,^,&,*,(,)
+"This code is easy to understand as compared to the code explained in the video for Insertion sort.                                                                                                                                         
+
+// Insertion sort
+        for(int i=1; i<arr.length;i++)
+        {
+            int j=i;
+            while(j>0 && arr[j-1]>arr[j])
+            {
+                int temp = arr[j-1];
+                arr[j-1] = arr[j];
+                arr[j] = temp;
+                j--;
+            }
+        }"
+!,@,#,$,%,U,^,&,*,(,)
+ngl but I found the insertion sorting method most easy 😂
+!,@,#,$,%,U,^,&,*,(,)
+"one of best lecture
+.............."
+!,@,#,$,%,U,^,&,*,(,)
+"These techniques take time to learn, Is this little bit hard or Is it only me who's feeling this... 
+Answer please... 
+Humble request....🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+mam please background me music mat dalo karo isse diturbrance hota hai
+!,@,#,$,%,U,^,&,*,(,)
+Didi awesome videos
+!,@,#,$,%,U,^,&,*,(,)
+"public static void printArray(int[] x){
+        for(int i = 0; i<x.length; i++){
+            System.out.print(x[i] + "" "");
+        }
+    }
+    public static void main(String[] args){
+
+        int[] score = {5,31,44,6,88,49,2,1};
+
+        for(int i=0; i< score.length; i++){
+            int smallest = score[i];
+            for(int j=i; j< score.length; j++){
+                if(score[j]< smallest){
+                    smallest = score[j];
+                    score[j] = score[i]; 
+                    score[i] = smallest;
+                }
+            }
+        }
+        printArray(score);
+    }"
+!,@,#,$,%,U,^,&,*,(,)
+Lovved the explanation.
+!,@,#,$,%,U,^,&,*,(,)
+Nice
+!,@,#,$,%,U,^,&,*,(,)
+Grt shradhdha damm sorting lectures buddy
+!,@,#,$,%,U,^,&,*,(,)
+"hello maim you had  one mistake again  if(nums[smallest] > nums[j]){
+            
+            var temp = nums[smallest]
+            nums[smallest] = nums[j]
+            nums[j] = temp  ; plz repalce i to j in selection sort"
+!,@,#,$,%,U,^,&,*,(,)
+"I was trying to make the bubble sort which I got working. For past half an hour I am trying to put the bubble sort in a function but my code is showing error I would be really glad if you could help me
+
+package com.DSA;
+
+public class sorting {
+
+    public static void printArray(int arr[]){
+
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i] + "" "");
+        }
+    }
+
+
+    public static void bubbleSort(int arr[]){
+        for(int i=0; i<arr.length-1; i++){         //for choosing no. 0->7  ,  1->8 , etc.  //need only to arrange n-1 element in array
+            for(int j=0; j<arr.length-1-i; j++){   //for comparing the choosen element with next element leaving behind i no of elements as they are already sorted   
+                if(arr[i] > arr[i+1]){
+                    int temp = arr[i];
+                    arr[i] = arr[i+1];
+                    arr[i+1] = temp;
+                }
+            }
+        }
+        printArray(arr);
+    }
+
+    
+    public static void main(String[]args){
+
+        int arr[] = {7, 8, 3 ,1 ,2};       //arr.length==5
+
+        //BUBBLE SORT
+        bubbleSort(arr[]);
+    }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+thankyou maam
+!,@,#,$,%,U,^,&,*,(,)
+"great video loved it , explanation was good very easy"
+!,@,#,$,%,U,^,&,*,(,)
+We can print the array using System.out.println(Arrays.toString(arr));
+!,@,#,$,%,U,^,&,*,(,)
+add english subtitles later
+!,@,#,$,%,U,^,&,*,(,)
+"mam mere me run nhi ho rha hai bubble sort 
+printArray(arr) error bta rha hai kaise solve kru"
+!,@,#,$,%,U,^,&,*,(,)
+greatttt explanation❣️
+!,@,#,$,%,U,^,&,*,(,)
+INSERTUON SORT-While loop k bad mujhe smjh nhi aya please help me..maine es video ko 5 times dekha..
+!,@,#,$,%,U,^,&,*,(,)
+Solutions of previous video are not uploaded in this video lecture's pdf !
+!,@,#,$,%,U,^,&,*,(,)
+Best video... For class x ICSE
+!,@,#,$,%,U,^,&,*,(,)
+thank you mam your video helps many student like me
+!,@,#,$,%,U,^,&,*,(,)
+"but arr.length is giving error 
+why how to fix it"
+!,@,#,$,%,U,^,&,*,(,)
+i cant understand the use of 2nd for loop in bubble sort ???
+!,@,#,$,%,U,^,&,*,(,)
+can you provide videos in english
+!,@,#,$,%,U,^,&,*,(,)
+Please provide solution of homework questions of previous lecture ( bit manipulation ).
+!,@,#,$,%,U,^,&,*,(,)
+"Bubble Sort - 2:05
+Selection   Sort - 16:04
+Insertion Sort - 25:26"
+!,@,#,$,%,U,^,&,*,(,)
+"import java.util.*;
+class bubblesorting
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int size= sc.nextInt();
+        int arr[]=new int[size];
+        int temp=0;
+        for(int a=0;a<size;a++)
+        {
+          arr[a]=sc.nextInt();
+        }
+        for(int i=0;i<size-1;i++)
+        {
+            for(int j=0;j<size-i-1;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    temp=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        for(int i=0;i< size; i++)
+        {
+            System.out.print(arr[i]+"" "");
+        }
+    }
+}"
+!,@,#,$,%,U,^,&,*,(,)
+Thanks di✨
+!,@,#,$,%,U,^,&,*,(,)
+🚀🚀
+!,@,#,$,%,U,^,&,*,(,)
+ma'am not able to understand time complexity 😭
+!,@,#,$,%,U,^,&,*,(,)
+"Though I am a beginner in coding, still this video was really helpful for me.  THanks!"
+!,@,#,$,%,U,^,&,*,(,)
+"Her expressions are irritating
+Anyone noticed this?"
+!,@,#,$,%,U,^,&,*,(,)
+madam ap chup ho jayee
+!,@,#,$,%,U,^,&,*,(,)
+It's pleasure to learn from you mam 🙏🙏🙏
+!,@,#,$,%,U,^,&,*,(,)
+"NOTE :: SELECTION SORT || DO NOT SWAP VALUES USING XOR OPERATOR HERE (when both indexes are same, value at this index will become zero and it won't sort properly)"
+!,@,#,$,%,U,^,&,*,(,)
+a best explanation on Bubble Sort
+!,@,#,$,%,U,^,&,*,(,)
+Many many thanks sir .
+!,@,#,$,%,U,^,&,*,(,)
+super
+!,@,#,$,%,U,^,&,*,(,)
+Thank u sir u cleared it in such a simple manner
+!,@,#,$,%,U,^,&,*,(,)
+🔥❤️
+!,@,#,$,%,U,^,&,*,(,)
+excellent explanation.
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir ❤️❤️😘😘👍👍
+!,@,#,$,%,U,^,&,*,(,)
+nice explain
+!,@,#,$,%,U,^,&,*,(,)
+Love it sir got it understood instantly
+!,@,#,$,%,U,^,&,*,(,)
+Very good explanation sir..
+!,@,#,$,%,U,^,&,*,(,)
+Thanks a lot sir! Love you sir.
+!,@,#,$,%,U,^,&,*,(,)
+adamın dibi eyvallah hintli dayım
+!,@,#,$,%,U,^,&,*,(,)
+Thanks Sir...well explained 😊🙏
+!,@,#,$,%,U,^,&,*,(,)
+yen = 5
+!,@,#,$,%,U,^,&,*,(,)
+♥️
+!,@,#,$,%,U,^,&,*,(,)
+Thank
+!,@,#,$,%,U,^,&,*,(,)
+"Thanku soo much ,this will help me more 💝"
+!,@,#,$,%,U,^,&,*,(,)
+thank you!!
+!,@,#,$,%,U,^,&,*,(,)
+Good job 👍
+!,@,#,$,%,U,^,&,*,(,)
+tq.. so much sir for your wonderfull explanation..
+!,@,#,$,%,U,^,&,*,(,)
+"Very helpfull sir ,,I watched some of yours .I truly love to code..🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+Thank you!!
+!,@,#,$,%,U,^,&,*,(,)
+Excellent Explanation
+!,@,#,$,%,U,^,&,*,(,)
+THANK YOU SO MUCH SIR FOR THIS WELL-EXPLAINED VIDEO \^o^/
+!,@,#,$,%,U,^,&,*,(,)
+"Thanks a lot you are the best sir , God bless you"
+!,@,#,$,%,U,^,&,*,(,)
+very nice explaination
+!,@,#,$,%,U,^,&,*,(,)
+Sir could you please tell the logic to get each pass result
+!,@,#,$,%,U,^,&,*,(,)
+"best explanation ,thank you sir."
+!,@,#,$,%,U,^,&,*,(,)
+"I am having a problem. After the first output, when I close the compiler and again start the compiler and run the program, the program gives the wrong output, can anyone tell me why is this happening.
+
+here is my program
+
+#include <stdio.h>
+
+int findhcf(int a,int b)
+{
+    int i,HCF;
+    for(i =1;i<=a;i++){
+        if(a%i==0&&b%i==0){
+        HCF=i;
+        }
+    } return HCF;
+}
+int main()
+{
+    int i=0,HCF,range,temp=0,j=0;
+    long long int a[100];
+    printf(""Enter Array Size: "");
+    scanf(""%d"", &range);
+    
+	for(i=0;i<range;i++){
+       scanf(""%d"", &a[i]);
+    }
+    for(i=0;i<range;i++)
+    {
+    	for(int j=i+1;j<range;j++)
+    	{
+    		if(a[i]>a[j])
+    		{
+    			temp=a[i];
+    			a[i]=a[j];
+    			a[j]=temp;
+			}
+		}
+	}
+	for(i=0;i<range-1;i++){
+     HCF = findhcf(a[0],a[i+1]);
+     a[0]=(a[0]*a[i+1])/HCF;
+    }
+    printf(""%lld"", a[0]);
+    
+    return 0;
+}
+
+So basically this program is about finding the lcm of n numbers, but to find it I need to sort them in ascending order, but the above-mentioned problem arises when I try it for the second time. 
+Help me pls☹"
+!,@,#,$,%,U,^,&,*,(,)
+Explanation was amazing sir 😍😍
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir 👍👍
+!,@,#,$,%,U,^,&,*,(,)
+what a teacher!! sir ji you are awesome!
+!,@,#,$,%,U,^,&,*,(,)
+You are explaining good... But after explaination... Please write the complete program once .
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir I understood this concept
+!,@,#,$,%,U,^,&,*,(,)
+Thanks sir
+!,@,#,$,%,U,^,&,*,(,)
+"sir, i am a mechanical engineer 1ST year student
+so should i have a grip on coding?
+PS : ihave intersest in coding"
+!,@,#,$,%,U,^,&,*,(,)
+By this video I cleared tr round.tq sir
+!,@,#,$,%,U,^,&,*,(,)
+"you changed  n-1 to n-1-i in for(j) loop,how do we write that  while compiling, it don't work for 1st sort please explai1🙏🙏"
+!,@,#,$,%,U,^,&,*,(,)
+"Thank You, Sir!!!
+Really easy way to catch it....!!!"
+!,@,#,$,%,U,^,&,*,(,)
+Great explanation bro. Keep it up!!!!!
+!,@,#,$,%,U,^,&,*,(,)
+How to print those sorted elements can you please explain 😭
+!,@,#,$,%,U,^,&,*,(,)
+If you don't understand this video see my video why two for loop used in bubble sort
+!,@,#,$,%,U,^,&,*,(,)
+"explaining is very good sir,thank you"
+!,@,#,$,%,U,^,&,*,(,)
+"Sir, why we use two loops sir"
+!,@,#,$,%,U,^,&,*,(,)
+"Thank you,sir"
+!,@,#,$,%,U,^,&,*,(,)
+Nice work keep uploading these types of videos  to help students
+!,@,#,$,%,U,^,&,*,(,)
+"#include <stdio.h>
+
+int main()
+{
+    int arr[20],i,j,n,temp;
+    printf(""enter the size of array"");
+    scanf(""%d"",&n);
+    printf(""enter elements into arry"");
+    for(i=0;i<n;i++)
+    {
+        scanf(""%d"",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf(""%d "",arr[i]);
+    }
+    for(i=0;i<n-1;i++)
+    {
+        for(j=0;j<n-i-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("" %d "",arr[i]);
+    }
+    
+
+    return 0;
+}"
+!,@,#,$,%,U,^,&,*,(,)
+"Sir isme aapne i=0, 1st=5 kiya hai kya oo i=4, 5th=5 nhi hoga ???"
+!,@,#,$,%,U,^,&,*,(,)
+thank you sir...i was not getting... exactly y this is happening now i got it...
+!,@,#,$,%,U,^,&,*,(,)
+Explanation was extremely good. Thank you so much!
+!,@,#,$,%,U,^,&,*,(,)
+thank you sir
+!,@,#,$,%,U,^,&,*,(,)
+🙏🙏🙏🙏🙏
+!,@,#,$,%,U,^,&,*,(,)
+LEGEND!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!,@,#,$,%,U,^,&,*,(,)
+nice sir
+!,@,#,$,%,U,^,&,*,(,)
+Well explained.
+!,@,#,$,%,U,^,&,*,(,)
+What wass meant by temp
+!,@,#,$,%,U,^,&,*,(,)
+Today is my exam and I'm watching this 2 hours before my exam.
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir
+!,@,#,$,%,U,^,&,*,(,)
+Quality Teaching....💯💯💯
+!,@,#,$,%,U,^,&,*,(,)
+Thank so much teacher!!! Do you have video tutorial about quick sort and merge sort?
+!,@,#,$,%,U,^,&,*,(,)
+Sir please explain in Hindi also
+!,@,#,$,%,U,^,&,*,(,)
+Thanks a lot sir
+!,@,#,$,%,U,^,&,*,(,)
+The real guru
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sirrt
+!,@,#,$,%,U,^,&,*,(,)
+thanks sir....for this outstanding explanation!
+!,@,#,$,%,U,^,&,*,(,)
+Thanks a lot
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir...u don't have idia what u have done for us 💯..it meant a lot ✌️
+!,@,#,$,%,U,^,&,*,(,)
+Thank you so much Sir.
+!,@,#,$,%,U,^,&,*,(,)
+Very helpful! Thank you sir 🙏🏻🙏🏻
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir
+!,@,#,$,%,U,^,&,*,(,)
+To the point.. helped a lot
+!,@,#,$,%,U,^,&,*,(,)
+Please make a video on quick sort and heap sort
+!,@,#,$,%,U,^,&,*,(,)
+you are too good
+!,@,#,$,%,U,^,&,*,(,)
+Thank you sir
+!,@,#,$,%,U,^,&,*,(,)
+You are amazing I love you ahaha
+!,@,#,$,%,U,^,&,*,(,)
+"unable to find a mistake please somebody help me
+#include<stdio.h>
+int main()
+{
+	int a[20],i,j,temp,n;
+	printf(""Enter the element size"");
+	scanf(""%d"",&n);
+	printf(""enter the elements"");
+	for(i=0;i<n;i++)
+	{
+		scanf(""%d"",&a[i]);
+	}
+	for(i=0;i<n-1;i++)
+	{
+		for(j=0;j<n-i-1;j++)
+		{
+			if(a[j]>a[j+1])
+			{
+			
+			temp=a[j];
+			a[j]=a[j+1];
+			a[j+1]=temp;
+		}
+		for(i=0;i<n;i++)
+		{
+		
+		printf(""%d"",a[i]);
+	}
+	}
+}
+}
+unable to find a mistake please somebody help me"
+!,@,#,$,%,U,^,&,*,(,)
+Thanks sir ji
+!,@,#,$,%,U,^,&,*,(,)
+This dude is dope af
+!,@,#,$,%,U,^,&,*,(,)
+"Awesome explanation sir,  what i simple logic it is and people create hype for this. Thanks for easy understanding"
+!,@,#,$,%,U,^,&,*,(,)
+Good  explanation best  channel  for  CSE  stundents
+!,@,#,$,%,U,^,&,*,(,)
